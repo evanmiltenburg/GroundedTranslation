@@ -252,6 +252,8 @@ class GroundedTranslationGenerator:
             neg_finished = []
             self.found_negation = False
             for t in range(start_gen, self.args.generation_timesteps):
+                # Ensure that kept_candidates is there. (And that previous results are removed.)
+                kept_candidates = []
                 # Get and sort candidates.
                 if max_beam_width > 0:
                     candidates, kept_candidates = self.get_candidates(t, beams, structs, keep_func)
@@ -259,7 +261,8 @@ class GroundedTranslationGenerator:
                 
                 if self.found_negation:
                     neg_c, neg_kc = self.get_candidates(t, neg_beams, neg_structs, keep_func)
-                    neg_candidates = kept_candidates + neg_c + neg_kc
+                    # don't add neg_kc: don't add examples twice.
+                    neg_candidates = kept_candidates + neg_c
                     neg_candidates.sort(reverse = True)
                 
                 if self.args.verbose:
