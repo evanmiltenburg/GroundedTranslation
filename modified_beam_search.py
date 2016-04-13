@@ -208,6 +208,7 @@ class GroundedTranslationGenerator:
         except AssertionError:
             raise AssertionError('Please increase beam width.')
         
+        ident_desc_dict = dict()
         # Let's begin :)
         keep_func = self.get_keep_func()
         prefix = "val" if val else "test"
@@ -355,20 +356,26 @@ class GroundedTranslationGenerator:
             # Emit the lowest (log) probability sequence
             best_beam = finished[0] if not self.found_negation else neg_finished[0]
             complete_sentences[i] = [self.index2word[x] for x in best_beam[1]]
-            handle.write(' '.join([x for x
+            generated_sentence = ' '.join([x for x
                                    in itertools.takewhile(
-                                       lambda n: n != "<E>", complete_sentences[i])]) + "\n")
-            logger.info("%s (%f)",' '.join([x for x
-                                  in itertools.takewhile(
-                                      lambda n: n != "<E>",
-                                      complete_sentences[i])]),
-                                  best_beam[0])
+                                       lambda n: n != "<E>", complete_sentences[i])])
+            handle.write(generated_sentence + "\n")
+            logger.info("%s (%f)",generated_sentence,best_beam[0])
+            ident_desc_dict[data['ident']] = generated_sentence
 
             seen += text.shape[0]
             if seen == self.data_gen.split_sizes['val']:
                 # Hacky way to break out of the generator
                 break
         handle.close()
+        
+        # Create file name for JSON file. Include beam width in the filename.
+        json_name = ''.join(['generated_sentences_' ,
+                             str(self.args.beam_width),
+                             '.json'])
+        # Write out sentences.
+        with open(json_name,'w') as f:
+            json.dump(ident_desc_dict,f)
 
     def reset_text_arrays(self, text_arrays, fixed_words=1):
         """ Reset the values in the text data structure to zero so we cannot

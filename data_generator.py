@@ -788,7 +788,7 @@ class VisualWordDataGenerator(object):
 
     def random_generator(self, split):
         "Generator that produces input/output tuples for a given dataset and split."
-        # For randomization, we use a independent Random instance. 
+        # For randomization, we use a independent Random instance.
         random_instance = random.Random()
         # Make sure that the desired split is actually in the dataset.
         assert split in self.dataset
@@ -833,7 +833,7 @@ class VisualWordDataGenerator(object):
                         yield {'text':arrays[0], 'img': arrays[1],
                                'output': targets}
                         i = 0
-                        arrays = self.get_new_training_arrays(self.args_dict.batch_size, 
+                        arrays = self.get_new_training_arrays(self.args_dict.batch_size,
                                               self.args_dict.source_vectors is not None,
                                               not self.args_dict.no_image)
             if i != 0:
@@ -844,7 +844,7 @@ class VisualWordDataGenerator(object):
                        'output': targets}
                 i = 0
                 j = 0
-                arrays = self.get_new_training_arrays(self.args_dict.batch_size, 
+                arrays = self.get_new_training_arrays(self.args_dict.batch_size,
                                       self.args_dict.source_vectors is not None,
                                       not self.args_dict.no_image)
 
@@ -852,7 +852,7 @@ class VisualWordDataGenerator(object):
         """Generator that returns the instances in a split in the fixed order
         defined in the underlying data. Useful for calculating perplexity, etc.
         No randomization."""
-        arrays = self.get_new_training_arrays(self.args_dict.batch_size, 
+        arrays = self.get_new_training_arrays(self.args_dict.batch_size,
                                               self.args_dict.source_vectors is not None,
                                               not self.args_dict.no_image)
         i = 0
@@ -899,7 +899,7 @@ class VisualWordDataGenerator(object):
                        'output': targets}
                 i = 0
                 j = 0
-                arrays = self.get_new_training_arrays(self.args_dict.batch_size, 
+                arrays = self.get_new_training_arrays(self.args_dict.batch_size,
                                       self.args_dict.source_vectors is not None,
                                       not self.args_dict.no_image)
 #            for ident in identifiers:
@@ -926,7 +926,7 @@ class VisualWordDataGenerator(object):
 #                    yield {'text':arrays[0], 'img': arrays[1],
 #                           'output': targets}
 #                    i = 0
-#                    arrays = self.get_new_training_arrays(self.args_dict.batch_size, 
+#                    arrays = self.get_new_training_arrays(self.args_dict.batch_size,
 #                                          self.args_dict.source_vectors is not None,
 #                                                  not self.args_dict.no_image)
 
@@ -969,7 +969,7 @@ class VisualWordDataGenerator(object):
                    in arrays[0][0,:,:] if self.index2word[np.argmax(x)]
                    != "<P>"]))
                yield {'text':arrays[0], 'img': arrays[1],
-                      'output': targets}
+                      'output': targets, 'ident': ident}
                i = 0
                arrays = self.get_new_training_arrays(batch_size,
                                                      self.args_dict.source_vectors is not None,
@@ -981,7 +981,7 @@ class VisualWordDataGenerator(object):
             logger.debug(' '.join([self.index2word[np.argmax(x)] for x in
                 arrays[0][0,:,:] if self.index2word[np.argmax(x)] != "<P>"]))
             yield {'text':arrays[0], 'img': arrays[1],
-                    'output': targets}
+                    'output': targets, 'ident': ident}
             i = 0
             arrays = self.get_new_training_arrays(batch_size,
                                                   self.args_dict.source_vectors is not None,
