@@ -120,10 +120,11 @@ class VisualWordLSTM(object):
         for arg, value in self.args.__dict__.iteritems():
             logger.info("%s: %s" % (arg, str(value)))
 
-if __name__ == "__main__":
+def get_parser():
+    "Get an argument parser for this module."
     parser = argparse.ArgumentParser(
         description="Train an word embedding model using LSTM network")
-
+    
     parser.add_argument("--run_string", default="", type=str,
                         help="Optional string to help you identify the run")
     parser.add_argument("--debug", action="store_true",
@@ -141,14 +142,14 @@ if __name__ == "__main__":
                         strings. Useful mostly for mt-only model (in other\
                         cases, image provides enough useful starting\
                         context.)")
-
+    
     parser.add_argument("--small", action="store_true",
                         help="Run on 100 images. Useful for debugging")
     parser.add_argument("--num_sents", default=5, type=int,
                         help="Number of descriptions/image for training")
     parser.add_argument("--small_val", action="store_true",
                         help="Validate on 100 images. Useful for speed/memory")
-
+    
     # These options turn off image or source language inputs.
     # Image data is *always* included in the hdf5 dataset, even if --no_image
     # is set.
@@ -167,18 +168,18 @@ if __name__ == "__main__":
     parser.add_argument("--source_type", type=str, default=None,
                         help="Source features over gold or predicted tokens?\
                         Expects 'gold' or 'predicted'. Required")
-
+    
     parser.add_argument("--dataset", default="", type=str, help="Path to the\
                         HDF5 dataset to use for training / val input\
                         (defaults to flickr8k)")
     parser.add_argument("--supertrain_datasets", nargs="+", help="Paths to the\
                         datasets to use as additional training input (defaults\
                         to None)")
-
+    
     parser.add_argument("--big_batch_size", default=10000, type=int,
                         help="Number of examples to load from disk at a time;\
                         0 loads entire dataset. Default is 10000")
-
+    
     parser.add_argument("--predefined_epochs", action="store_true",
                         help="Do you want to stop training after a specified\
                         number of epochs, regardless of early-stopping\
@@ -195,7 +196,7 @@ if __name__ == "__main__":
                         help="Prob. of dropping embedding units. Default=0.5")
     parser.add_argument("--gru", action="store_true", help="Use GRU instead\
                         of LSTM recurrent state? (default = False)")
-
+    
     parser.add_argument("--optimiser", default="adam", type=str,
                         help="Optimiser: rmsprop, momentum, adagrad, etc.")
     parser.add_argument("--lr", default=None, type=float)
@@ -209,7 +210,7 @@ if __name__ == "__main__":
     parser.add_argument("--clipnorm", default=-1, type=float,
                         help="Clip gradients? (default = -1, which means\
                         don't clip the gradients.")
-
+    
     parser.add_argument("--unk", type=int,
                         help="unknown character cut-off. Default=3", default=3)
     parser.add_argument("--generation_timesteps", default=30, type=int,
@@ -218,7 +219,7 @@ if __name__ == "__main__":
     parser.add_argument("--h5_writeable", action="store_true",
                         help="Open the H5 file for write-access? Useful for\
                         serialising hidden states to disk. (default = False)")
-
+    
     parser.add_argument("--use_predicted_tokens", action="store_true",
                         help="Generate final hidden state\
                         activations over oracle inputs or from predicted\
@@ -232,11 +233,16 @@ if __name__ == "__main__":
                         (default = "", which means we will derive the\
                         vocabulary from the training dataset")
     parser.add_argument("--no_early_stopping", action="store_true")
-
-    parser.add_argument("--mrnn", action="store_true", 
+    
+    parser.add_argument("--mrnn", action="store_true",
                         help="Use a Mao-style multimodal recurrent neural\
                         network?")
+    parser.add_argument("--seed_value", type=int, default=1234,
+                        help="Provide specific seed value.")
+    return parser
 
+if __name__ == "__main__":
+    parser = get_parser()
     arguments = parser.parse_args()
 
     if arguments.source_vectors is not None:
@@ -246,7 +252,7 @@ if __name__ == "__main__":
 
     if arguments.fixed_seed:
         import numpy as np
-        np.random.seed(1234)
+        np.random.seed(arguments.seed_value)
 
     import theano
     model = VisualWordLSTM(arguments)
