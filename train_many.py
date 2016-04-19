@@ -16,4 +16,4 @@ for i in range(5):
             '--fixed_seed',
             '--seed_value=' + new_seed,
             '&> whathappened' + new_seed + '.log &']
-    subprocess.call(args)
+    subprocess.call(' '.join(args))
