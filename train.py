@@ -237,7 +237,7 @@ def get_parser():
     parser.add_argument("--mrnn", action="store_true",
                         help="Use a Mao-style multimodal recurrent neural\
                         network?")
-    parser.add_argument("--seed_value", type=int, default=1234,
+    parser.add_argument("--seed_value", type=int, default=0,
                         help="Provide specific seed value.")
     return parser
 
@@ -252,8 +252,11 @@ if __name__ == "__main__":
 
     if arguments.fixed_seed:
         import numpy as np
-        logger.info('Seed value: %d' % arguments.seed_value)
-        np.random.seed(arguments.seed_value)
+        if arguments.seed_value:
+            logger.info('Seed value: %d' % arguments.seed_value)
+        else:
+            arguments.seed_value = np.random.randint(12345,67890)
+            np.random.seed(arguments.seed_value)
 
     import theano
     model = VisualWordLSTM(arguments)
