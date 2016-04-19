@@ -252,6 +252,7 @@ if __name__ == "__main__":
 
     if arguments.fixed_seed:
         import numpy as np
+        logger.info('Seed value: %d' % arguments.seed_value)
         np.random.seed(arguments.seed_value)
 
     import theano
