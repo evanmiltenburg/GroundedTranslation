@@ -254,9 +254,11 @@ if __name__ == "__main__":
         import numpy as np
         if arguments.seed_value:
             logger.info('Seed value: %d' % arguments.seed_value)
+            np.random.seed(arguments.seed_value)
         else:
             arguments.seed_value = np.random.randint(12345,67890)
             np.random.seed(arguments.seed_value)
+            logger.info('Seed value: %d' % arguments.seed_value)
 
     import theano
     model = VisualWordLSTM(arguments)
