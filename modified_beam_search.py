@@ -225,7 +225,7 @@ class GroundedTranslationGenerator:
         # we are going to beam search for the most probably sentence.
         # let's do this one sentence at a time to make the logging output
         # easier to understand
-        for data in val_generator:
+        for seen,data in enumerate(val_generator, start=1):
             text = data['text']
             # Append the first start_gen words to the complete_sentences list
             # for each instance in the batch.
@@ -369,8 +369,7 @@ class GroundedTranslationGenerator:
             logger.info("%s (%f)",generated_sentence,best_beam[0])
             ident_desc_dict[data['ident']] = generated_sentence
 
-            seen += text.shape[0]
-            if seen == self.data_gen.split_sizes['val']:
+            if seen == len(self.dataset[prefix]):
                 # Hacky way to break out of the generator
                 break
         handle.close()

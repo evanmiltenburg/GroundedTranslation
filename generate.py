@@ -97,7 +97,6 @@ class GroundedTranslationGenerator:
                                        use_image=self.use_image)
 
         self.generate_sentences(self.args.checkpoint, val=not self.args.test)
-        self.bleu_score(self.args.checkpoint, val=not self.args.test)
         if not self.args.without_scores:
             self.bleu_score(self.args.checkpoint, val=not self.args.test)
             if not self.args.without_PPLX:
@@ -135,7 +134,7 @@ class GroundedTranslationGenerator:
             # we are going to beam search for the most probably sentence.
             # let's do this one sentence at a time to make the logging output
             # easier to understand
-            for data in val_generator:
+            for seen,data in enumerate(val_generator,start=1):
                 text = data['text']
                 # Append the first start_gen words to the complete_sentences list
                 # for each instance in the batch.
@@ -265,8 +264,7 @@ class GroundedTranslationGenerator:
                 
                 ident_desc_dict[data['ident']] = generated_sentence
                 
-                seen += text.shape[0]
-                if seen == self.data_gen.split_sizes['val']:
+                if seen == len(self.dataset[prefix]):
                     # Hacky way to break out of the generator
                     break
             handle.close()
@@ -278,7 +276,7 @@ class GroundedTranslationGenerator:
             handle = codecs.open("%s/%sGenerated" % (filepath, prefix),
                                  "w", 'utf-8')
 
-            val_generator = self.data_gen.generation_generator(prefix, batch_size=1)
+            val_generator = self.data_gen.generation_generator(prefix)
             seen = 0
             for data in val_generator:
                 text = data['text']
