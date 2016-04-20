@@ -370,7 +370,7 @@ class GroundedTranslationGenerator:
         handle.close()
         
         # Create file name for JSON file. Include beam width in the filename.
-        json_name = ''.join(['generated_sentences_' ,
+        json_name = ''.join(['MBS_generated_sentences_' ,
                              str(self.args.beam_width),
                              '.json'])
         # Write out sentences.
@@ -521,9 +521,13 @@ class GroundedTranslationGenerator:
         prefix = "val" if val else "test"
         self.extract_references(directory, val)
 
+        persistent_name = ''.join([base_name,
+                                   '_MBS_generated_sentences_',
+                                   str(self.args.beam_width)])
+        
         subprocess.check_call(
-            ['perl multi-bleu.perl %s/%s_reference.ref < %s/%sGenerated | tee %s/%sBLEU'
-             % (directory, prefix, directory, prefix, directory, prefix)], shell=True)
+            ['perl multi-bleu.perl %s/%s_reference.ref < %s/%sGenerated | tee %s/%sBLEU | tee %s'
+             % (directory, prefix, directory, prefix, directory, prefix, persistent_name)], shell=True)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate descriptions from a trained model using LSTM network")
