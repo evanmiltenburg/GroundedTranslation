@@ -15,6 +15,7 @@ import os
 from copy import deepcopy
 import math
 import sys
+import json
 
 from data_generator import VisualWordDataGenerator
 import models
