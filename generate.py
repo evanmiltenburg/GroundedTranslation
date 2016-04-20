@@ -97,9 +97,11 @@ class GroundedTranslationGenerator:
                                        use_image=self.use_image)
 
         self.generate_sentences(self.args.checkpoint, val=not self.args.test)
+        self.bleu_score(self.args.checkpoint, val=not self.args.test)
         if not self.args.without_scores:
             self.bleu_score(self.args.checkpoint, val=not self.args.test)
-            self.calculate_pplx(self.args.checkpoint, val=not self.args.test)
+            if not self.args.without_PPLX:
+                self.calculate_pplx(self.args.checkpoint, val=not self.args.test)
 
     def generate_sentences(self, filepath, val=True):
         """
@@ -276,7 +278,7 @@ class GroundedTranslationGenerator:
             handle = codecs.open("%s/%sGenerated" % (filepath, prefix),
                                  "w", 'utf-8')
 
-            val_generator = self.data_gen.generation_generator(prefix)
+            val_generator = self.data_gen.generation_generator(prefix, batch_size=1)
             seen = 0
             for data in val_generator:
                 text = data['text']
@@ -558,6 +560,8 @@ if __name__ == "__main__":
     parser.add_argument("--without_scores", action="store_true",
                         help="Don't calculate BLEU or perplexity. Useful if\
                         you only want to see the generated sentences.")
+    parser.add_argument("--without_PPLX", action="store_true",
+                            help="Don't calculate perplexity.")
     parser.add_argument("--beam_width", type=int, default=1)
 
     parser.add_argument("--mrnn", action="store_true",

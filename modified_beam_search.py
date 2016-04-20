@@ -99,7 +99,8 @@ class GroundedTranslationGenerator:
         self.generate_sentences(self.args.checkpoint, val=not self.args.test)
         if not self.args.without_scores:
             self.bleu_score(self.args.checkpoint, val=not self.args.test)
-            self.calculate_pplx(self.args.checkpoint, val=not self.args.test)
+            if not self.args.without_PPLX:
+                self.calculate_pplx(self.args.checkpoint, val=not self.args.test)
 
     ############################################################################
     # HELPER FUNCTIONS FOR MODIFIED BEAM SEARCH
@@ -332,6 +333,11 @@ class GroundedTranslationGenerator:
                 for leftover in beams:
                     finished.append(leftover)
 
+            # Do the same for the neg beams.
+            if self.found_negation and len(neg_finished) == 0:
+                for leftover in neg_beams:
+                    neg_finished.append(leftover)
+
             # Normalise the probabilities by the length of the sequences
             # as suggested by Graves (2012) http://arxiv.org/abs/1211.3711
             for f in finished:
@@ -520,7 +526,8 @@ class GroundedTranslationGenerator:
 
         prefix = "val" if val else "test"
         self.extract_references(directory, val)
-
+        
+        base_name = '%s/%sBLEU' % (directory,prefix)
         persistent_name = ''.join([base_name,
                                    '_MBS_generated_sentences_',
                                    str(self.args.beam_width)])
@@ -603,6 +610,8 @@ if __name__ == "__main__":
     parser.add_argument("--without_scores", action="store_true",
                         help="Don't calculate BLEU or perplexity. Useful if\
                         you only want to see the generated sentences.")
+    parser.add_argument("--without_PPLX", action="store_true",
+                            help="Don't calculate perplexity.")
     parser.add_argument("--beam_width", type=int, default=1)
 
     parser.add_argument("--mrnn", action="store_true",
