@@ -115,7 +115,9 @@ class GroundedTranslationGenerator:
 
         TODO: duplicated method with generate.py
         """
-
+        # Keep track of generated sentences.
+        ident_desc_dict = dict()
+        
         if self.args.beam_width > 1:
             prefix = "val" if val else "test"
             handle = codecs.open("%s/%sGenerated" % (filepath, prefix), "w",
@@ -144,16 +146,16 @@ class GroundedTranslationGenerator:
 
                 max_beam_width = self.args.beam_width
                 structs = self.make_duplicate_matrices(text,
-                                                       img, 
+                                                       img,
                                                        max_beam_width)
                 text = structs[0]
                 img = structs[1]
                 # A beam is a 2-tuple with the probability of the sequence and
                 # the words in that sequence. Start with empty beams
                 beams = [(0.0, [])]
-                # collects beams that are in the top candidates and 
+                # collects beams that are in the top candidates and
                 # emitted a <E> token.
-                finished = [] 
+                finished = []
                 for t in range(start_gen, self.args.generation_timesteps):
                     # Store the candidates produced at timestep t, will be
                     # pruned at the end of the timestep
@@ -163,7 +165,7 @@ class GroundedTranslationGenerator:
                     # ever generating a prediction for the next word. This saves a
                     # lot of cycles.
                     preds = self.model.predict({'text': structs[0],
-                                                'img':  structs[1]}, 
+                                                'img':  structs[1]},
                                                 verbose=0)
 
                     # The last indices in preds are the predicted words
@@ -182,8 +184,8 @@ class GroundedTranslationGenerator:
                             wordProb = next_word_indices[beam_idx][beam_predictions[top_idx]]
                             # For the beam_idxth beam, add the log probability
                             # of the top_idxth predicted word to the previous
-                            # log probability of the sequence, and  append the 
-                            # top_idxth predicted word to the sequence of words 
+                            # log probability of the sequence, and  append the
+                            # top_idxth predicted word to the sequence of words
                             candidates.append([b[0] + math.log(wordProb), b[1] + [wordIndex]])
 
                     candidates.sort(reverse = True)
@@ -195,9 +197,9 @@ class GroundedTranslationGenerator:
 
                     beams = candidates[:max_beam_width] # prune the beams
                     for b in beams:
-                        # If a top candidate emitted an EOS token then 
+                        # If a top candidate emitted an EOS token then
                         # a) add it to the list of finished sequences
-                        # b) remove it from the beams and decrease the 
+                        # b) remove it from the beams and decrease the
                         # maximum size of the beams.
                         if b[1][-1] == self.word2index["<E>"]:
                             finished.append(b)
@@ -250,15 +252,16 @@ class GroundedTranslationGenerator:
                 # Emit the lowest (log) probability sequence
                 best_beam = finished[0]
                 complete_sentences[i] = [self.index2word[x] for x in best_beam[1]]
-                handle.write(' '.join([x for x
+                generated_sentence = ' '.join([x for x
                                        in itertools.takewhile(
-                                           lambda n: n != "<E>", complete_sentences[i])]) + "\n")
-                logger.info("%s (%f)",' '.join([x for x
-                                      in itertools.takewhile(
-                                          lambda n: n != "<E>",
-                                          complete_sentences[i])]),
-                                      best_beam[0])
-
+                                           lambda n: n != "<E>", complete_sentences[i])])
+                
+                handle.write(generated_sentence + "\n")
+                
+                logger.info("%s (%f)", generated_sentence, best_beam[0])
+                
+                ident_desc_dict[data['ident']] = generated_sentence
+                
                 seen += text.shape[0]
                 if seen == self.data_gen.split_sizes['val']:
                     # Hacky way to break out of the generator
@@ -269,7 +272,7 @@ class GroundedTranslationGenerator:
             prefix = "val" if val else "test"
             logger.info("Generating %s descriptions", prefix)
             start_gen = self.args.generate_from_N_words + 1  # include BOS
-            handle = codecs.open("%s/%sGenerated" % (filepath, prefix), 
+            handle = codecs.open("%s/%sGenerated" % (filepath, prefix),
                                  "w", 'utf-8')
 
             val_generator = self.data_gen.generation_generator(prefix)
@@ -290,7 +293,7 @@ class GroundedTranslationGenerator:
                 for t in range(start_gen, self.args.generation_timesteps):
                     logger.debug("Input token: %s" % self.index2word[np.argmax(text[0,t-1])])
                     preds = self.model.predict({'text': text,
-                                                'img':  img}, 
+                                                'img':  img},
                                                 verbose=0)
 
                     # Look at the last indices for the words.
@@ -310,12 +313,23 @@ class GroundedTranslationGenerator:
                                             in itertools.takewhile(
                                                 lambda n: n != "<E>", s[1:])])
                     handle.write(decoded_str + "\n")
+                    ident_desc_dict[data['ident']] = decoded_str
 
                 seen += text.shape[0]
                 if seen == self.data_gen.split_sizes['val']:
                     # Hacky way to break out of the generator
                     break
             handle.close()
+        
+        # Create file name for JSON file. Include beam width in the filename.
+        json_name = ''.join([self.args.run_string,
+                             '_',
+                             str(self.args.beam_width),
+                             '.json'])
+        
+        # Write out sentences.
+        with open(json_name,'w') as f:
+            json.dump(ident_desc_dict,f)
 
     def reset_text_arrays(self, text_arrays, fixed_words=1):
         """ Reset the values in the text data structure to zero so we cannot
@@ -386,7 +400,7 @@ class GroundedTranslationGenerator:
 
         duplicated = [[],[]]
         for x in range(k):
-            # Make a deep copy of the word_feats structures 
+            # Make a deep copy of the word_feats structures
             # so the arrays will never be shared
             duplicated[0].append(deepcopy(word_feats[0,:,:]))
             duplicated[1].append(img_feats[0,:,:])
@@ -460,15 +474,19 @@ class GroundedTranslationGenerator:
 
         prefix = "val" if val else "test"
         self.extract_references(directory, val)
-
+        
+        base_name = '%s/%sBLEU' % (directory,prefix)
+        persistent_name = ''.join([base_name,
+                                   '_generated_sentences_',
+                                   str(self.args.beam_width)])
+        
         subprocess.check_call(
-            ['perl multi-bleu.perl %s/%s_reference.ref < %s/%sGenerated | tee %s/%sBLEU'
-             % (directory, prefix, directory, prefix, directory, prefix)], shell=True)
+            ['perl multi-bleu.perl %s/%s_reference.ref < %s/%sGenerated | tee %s/%sBLEU | tee %s'
+             % (directory, prefix, directory, prefix, directory, prefix, persistent_name)], shell=True)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate descriptions from a trained model using LSTM network")
-
-    parser.add_argument("--run_string", default="", type=str,
+    parser.add_argument("--run_string", default="generated_sentences", type=str,
                         help="Optional string to help you identify the run")
     parser.add_argument("--debug", action="store_true",
                         help="Print debug messages to stdout?")
@@ -541,7 +559,7 @@ if __name__ == "__main__":
                         you only want to see the generated sentences.")
     parser.add_argument("--beam_width", type=int, default=1)
 
-    parser.add_argument("--mrnn", action="store_true", 
+    parser.add_argument("--mrnn", action="store_true",
                         help="Use a Mao-style multimodal recurrent neural\
                         network?")
     parser.add_argument("--clipnorm", default=0.1)
