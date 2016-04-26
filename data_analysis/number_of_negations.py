@@ -66,7 +66,7 @@ plt.legend(handles=[gen_line, mbs_line, coco_line],loc=2)
 plt.xlabel('Beam size')
 plt.ylabel('% negations')
 
-plt.savefig('number_of_negations.pdf')
+plt.savefig('./pdf/number_of_negations.pdf')
 
 # Let's make another figure.
 plt.clf()
@@ -93,4 +93,4 @@ plt.legend(handles=[mbs_line, coco_line],loc=2)
 plt.xlabel('Beam size')
 plt.ylabel('Kinds of negations')
 
-plt.savefig('kinds_of_negations.pdf')
+plt.savefig('./pdf/kinds_of_negations.pdf')

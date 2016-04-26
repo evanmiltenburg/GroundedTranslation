@@ -32,4 +32,4 @@ plt.legend(handles=[gen_line, mbs_line])
 plt.xlabel('Beam size')
 plt.ylabel('BLEU score')
 
-plt.savefig('beam_vs_bleu.pdf')
+plt.savefig('./pdf/beam_vs_bleu.pdf')
