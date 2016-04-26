@@ -375,9 +375,15 @@ class GroundedTranslationGenerator:
         handle.close()
         
         # Create file name for JSON file. Include beam width in the filename.
-        json_name = ''.join(['MBS_generated_sentences_' ,
+        filename_as_list = ['MBS_generated_sentences_' ,
                              str(self.args.beam_width),
-                             '.json'])
+                             '.json']
+        
+        if self.args.run_string:
+            filename_as_list.insert(2,'_' + self.args.run_string)
+        
+        json_name = ''.join(filename_as_list)
+        
         # Write out sentences.
         with open(json_name,'w') as f:
             json.dump(ident_desc_dict,f)
@@ -527,9 +533,12 @@ class GroundedTranslationGenerator:
         self.extract_references(directory, val)
         
         base_name = '%s/%sBLEU' % (directory,prefix)
-        persistent_name = ''.join([base_name,
-                                   '_MBS_generated_sentences_',
-                                   str(self.args.beam_width)])
+        filename_as_list = [base_name,
+                            '_MBS_generated_sentences_',
+                            str(self.args.beam_width)]
+        if self.args.run_string:
+            filename_as_list.append('_' + self.args.run_string)
+        persistent_name = ''.join(filename_as_list)
         
         subprocess.check_call(
             ['perl multi-bleu.perl %s/%s_reference.ref < %s/%sGenerated | tee %s/%sBLEU | tee %s'

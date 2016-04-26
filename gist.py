@@ -1,124 +1,5 @@
-"""
-Entry module and class module for training a VisualWordLSTM.
-"""
-
-from __future__ import print_function
-
 import argparse
-import logging
-from math import ceil
-import sys
-
-import matplotlib as plt
-
-from Callbacks import CompilationOfCallbacks
-from data_generator import VisualWordDataGenerator
-import models
-
-import keras.callbacks
-
-# Set up logger
-logging.basicConfig(level=logging.INFO, stream=sys.stdout)
-logger = logging.getLogger(__name__)
-
-# How many descriptions to use for training if "--small" is set.
-SMALL_NUM_DESCRIPTIONS = 300
-
-
-class VisualWordLSTM(object):
-    """LSTM that combines visual features with textual descriptions.
-    TODO: more details. Inherits from object as new-style class.
-    """
-
-    def __init__(self, args):
-        self.args = args
-
-        # consistent with models.py
-        self.use_sourcelang = args.source_vectors is not None
-        self.use_image = not args.no_image
-
-        if self.args.debug:
-            theano.config.optimizer = 'fast_compile'
-            theano.config.exception_verbosity = 'high'
-
-    def train_model(self):
-        '''
-        In the model, we will merge
-        the word embeddings with
-        the VGG image representation (if used)
-        and the source-language multimodal vectors (if used).
-        We need to feed the data as a list, in which the order of the elements
-        in the list is _crucial_.
-        '''
-
-        self.log_run_arguments()
-
-        self.data_generator = VisualWordDataGenerator(
-            self.args, self.args.dataset)
-        if self.args.existing_vocab != "":
-            self.data_generator.set_vocabulary(self.args.existing_vocab)
-        else:
-            self.data_generator.extract_vocabulary()
-
-        self.V = self.data_generator.get_vocab_size()
-
-        if not self.use_sourcelang:
-            hsn_size = 0
-        else:
-            hsn_size = self.data_generator.hsn_size  # ick
-
-        if self.args.mrnn:
-            m = models.MRNN(self.args.hidden_size, self.V,
-                           self.args.dropin,
-                           self.args.optimiser, self.args.l2reg,
-                           hsn_size=hsn_size,
-                           weights=self.args.init_from_checkpoint,
-                           gru=self.args.gru,
-                           clipnorm=self.args.clipnorm,
-                           t=self.data_generator.max_seq_len)
-        else:
-            m = models.NIC(self.args.hidden_size, self.V,
-                           self.args.dropin,
-                           self.args.optimiser, self.args.l2reg,
-                           hsn_size=hsn_size,
-                           weights=self.args.init_from_checkpoint,
-                           gru=self.args.gru,
-                           clipnorm=self.args.clipnorm,
-                           t=self.data_generator.max_seq_len)
-
-        model = m.buildKerasModel(use_sourcelang=self.use_sourcelang,
-                                  use_image=self.use_image)
-
-        callbacks = CompilationOfCallbacks(self.data_generator.word2index,
-                                           self.data_generator.index2word,
-                                           self.args,
-                                           self.args.dataset,
-                                           self.data_generator,
-                                           use_sourcelang=self.use_sourcelang,
-                                           use_image=self.use_image)
-
-        train_generator = self.data_generator.random_generator('train')
-        train_size = self.data_generator.split_sizes['train']
-        val_generator = self.data_generator.fixed_generator('val')
-        val_size = self.data_generator.split_sizes['val']
-
-        model.fit_generator(generator=train_generator,
-                            samples_per_epoch=train_size,
-                            nb_epoch= self.args.max_epochs,
-                            verbose=2,
-                            callbacks=[callbacks],
-                            nb_worker=1,
-                            validation_data=val_generator,
-                            nb_val_samples=val_size)
-
-    def log_run_arguments(self):
-        '''
-        Save the command-line arguments, along with the method defaults,
-        used to parameterise this run.
-        '''
-        logger.info("Run arguments:")
-        for arg, value in self.args.__dict__.iteritems():
-            logger.info("%s: %s" % (arg, str(value)))
+import json
 
 def get_parser():
     "Get an argument parser for this module."
@@ -237,27 +118,39 @@ def get_parser():
     parser.add_argument("--mrnn", action="store_true",
                         help="Use a Mao-style multimodal recurrent neural\
                         network?")
-    parser.add_argument("--seed_value", type=int, default=0,
+    parser.add_argument("--seed_value", type=int, default=1234,
                         help="Provide specific seed value.")
     return parser
 
-if __name__ == "__main__":
-    parser = get_parser()
-    arguments = parser.parse_args()
-
-    if arguments.source_vectors is not None:
-        if arguments.source_type is None or arguments.source_enc is None:
-            parser.error("--source_type and --source_enc are required when\
-                        using --source_vectors")
-
-    if arguments.fixed_seed:
-        import numpy as np
-        if arguments.seed_value:
-            logger.info('Seed value: %d' % arguments.seed_value)
+def json_to_arg_string(filename):
+    "Loads a JSON file and converts its contents to an argument string."
+    with open(filename) as f:
+        d = json.load(f)
+    args = []
+    for argument, value in d.items():
+        if value is None:
+            argument = '--' + argument
+            args.append(argument)
         else:
-            arguments.seed_value = np.random.randint(12345,67890)
-            np.random.seed(arguments.seed_value)
+            argument = ''.join(['--', argument, '=', str(value)])
+            args.append(argument)
+    return args
 
-    import theano
-    model = VisualWordLSTM(arguments)
-    model.train_model()
+d = dict()
+d['mrnn'] = None # This gets saved as `null` in the JSON file.
+d['seed_value'] = 6789
+d['l2reg'] = 1e-5
+with open('test.json','w') as f:
+    json.dump(d,f)
+
+parser = get_parser()
+arguments = json_to_arg_string('test.json')
+
+
+ns = parser.parse_args()
+print 'Without arguments:'
+print ns
+
+ns = parser.parse_args(arguments)
+print 'With arguments:'
+print ns
