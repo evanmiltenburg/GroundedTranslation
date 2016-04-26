@@ -1,3 +1,5 @@
 *
 !.gitignore
 !random_fixed_seed_1
+!random_fixed_seed_1/
+!random_fixed_seed_1/*

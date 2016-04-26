@@ -1,0 +1,26 @@
+Checkpoint 1 | val pplx: 36.13959 bleu 15.66
+Checkpoint 2 | val pplx: 30.09967 bleu 14.92
+Checkpoint 3 | val pplx: 27.84365 bleu 15.24
+Checkpoint 4 | val pplx: 26.64285 bleu 14.74
+Checkpoint 5 | val pplx: 26.06980 bleu 15.08
+Checkpoint 6 | val pplx: 25.39259 bleu 16.24
+Checkpoint 7 | val pplx: 24.91296 bleu 15.65
+Checkpoint 8 | val pplx: 24.69657 bleu 15.66
+Checkpoint 9 | val pplx: 24.43232 bleu 16.13
+Checkpoint 10 | val pplx: 24.20837 bleu 16.29
+Checkpoint 11 | val pplx: 24.16118 bleu 15.07
+Checkpoint 12 | val pplx: 23.91755 bleu 15.82
+Checkpoint 13 | val pplx: 24.01184 bleu 15.75
+Checkpoint 14 | val pplx: 23.89407 bleu 15.92
+Checkpoint 15 | val pplx: 23.56742 bleu 15.87
+Checkpoint 16 | val pplx: 23.60783 bleu 15.00
+Checkpoint 17 | val pplx: 23.53487 bleu 15.10
+Checkpoint 18 | val pplx: 23.45627 bleu 15.05
+Checkpoint 19 | val pplx: 23.47250 bleu 15.53
+Checkpoint 20 | val pplx: 23.27132 bleu 16.02
+Checkpoint 21 | val pplx: 23.25345 bleu 15.83
+Checkpoint 22 | val pplx: 23.18352 bleu 14.76
+Best BLEU: 10 | val pplx 24.20837 bleu 16.29
+Best PPLX: 22 | val pplx 23.18352 bleu 14.76
+Early stopping marker: wait/patience: 12/10
+Early stopping because patience exceeded
