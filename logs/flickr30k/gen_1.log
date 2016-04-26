@@ -1,0 +1,18 @@
+Using gpu device 1: GRID K2 (CNMeM is disabled, CuDNN not available)
+Using Theano backend.
+INFO:data_generator:Initialising data generator
+INFO:data_generator:Train/val dataset: /data/flickr30k
+INFO:data_generator:Input gold descriptions
+INFO:__main__:Best checkpoint: checkpoints/random_fixed_seed_1/010-19042016-170121
+INFO:data_generator:Initialising vocabulary from pre-defined model
+INFO:data_generator:Max seq length 78, setting max_seq_len to 80
+INFO:data_generator:Split sizes {'test': 5000, 'train': 145000, 'val': 5070}
+INFO:data_generator:Number of words 18013 -> 6770
+INFO:data_generator:Retained / Original Tokens: 1764444 / 1785683 (98.81 pc)
+INFO:data_generator:Average train sentence length: 12.32 tokens
+INFO:models:Building Keras model...
+INFO:models:Using image features: True
+INFO:models:Using source language features: False
+INFO:models:... with weights defined in checkpoints/random_fixed_seed_1/010-19042016-170121
+INFO:__main__:Generating test descriptions
+BLEU = 16.27, 57.4/25.3/10.4/4.6 (BP=1.000, ratio=1.016, hyp_len=11397, ref_len=11216)

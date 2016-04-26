@@ -1,0 +1,2335 @@
+Using gpu device 1: GRID K2 (CNMeM is disabled, CuDNN not available)
+Using Theano backend.
+INFO:data_generator:Initialising data generator
+INFO:data_generator:Train/val dataset: /data/COCO/
+INFO:data_generator:Input gold descriptions
+INFO:__main__:Best checkpoint: checkpoints/random_fixed_seed_1/010-19042016-170121
+INFO:data_generator:Initialising vocabulary from pre-defined model
+INFO:data_generator:Max seq length 29, setting max_seq_len to 31
+INFO:data_generator:Split sizes {'test': 0, 'train': 1, 'val': 1698}
+INFO:data_generator:Number of words 25 -> 6770
+INFO:data_generator:Retained / Original Tokens: 23 / 29 (79.31 pc)
+INFO:data_generator:Average train sentence length: 29.00 tokens
+INFO:models:Building Keras model...
+INFO:models:Using image features: True
+INFO:models:Using source language features: False
+INFO:models:... with weights defined in checkpoints/random_fixed_seed_1/010-19042016-170121
+INFO:__main__:Generating val descriptions
+INFO:__main__:a black and white dog jumps over a hurdle (-0.683417)
+INFO:__main__:a woman in a red dress is sitting on a couch (-1.027983)
+INFO:__main__:a man in a red jacket is jumping off a ramp (-1.090622)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.850328)
+INFO:__main__:a man in a white shirt and a woman in a white shirt are (-0.996505)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.207597)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-0.952696)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.018503)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a tree (-1.324621)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a large tree (-1.409384)
+INFO:__main__:a man in a white shirt is about to hit a tennis ball (-0.907131)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.315932)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.854765)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on the beach looking at the ocean (-1.303079)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.081105)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.271346)
+INFO:__main__:a little boy is playing in a pool of water (-0.999152)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-1.001837)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a rock (-1.282842)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.037342)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on the roof of a building (-1.276752)
+INFO:__main__:a woman is sitting at a table in a restaurant (-0.938026)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-0.986121)
+INFO:__main__:a young girl in a pink shirt is looking at the camera (-1.172772)
+INFO:__main__:a black and white dog is running through the grass (-0.791893)
+INFO:__main__:a little boy is playing with a red toy toy in the snow (-1.080070)
+INFO:__main__:a man in a white shirt is working on a computer (-0.882269)
+INFO:__main__:a young boy in a white shirt is playing with a toy (-1.085782)
+INFO:__main__:a young girl in a pink shirt is sitting on a couch (-1.042675)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a rock (-1.350556)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.799407)
+INFO:__main__:a man in a red shirt is sleeping on a couch (-0.992337)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.301187)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in the woods (-1.387340)
+INFO:__main__:a woman in a pink dress is sitting on a couch (-1.061466)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.224235)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.070831)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a bike down the road (-1.366058)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.328120)
+INFO:__main__:a brown and white dog is running through the grass (-0.783352)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-0.908111)
+INFO:__main__:a group of people are standing in front of a building (-0.867330)
+INFO:__main__:a baseball player in a red jersey is about to throw a ball (-0.956177)
+INFO:__main__:a man in a white shirt and blue shorts is playing tennis (-1.137644)
+INFO:__main__:a little girl in a pink dress is sitting on the grass (-0.997699)
+INFO:__main__:a man in a blue shirt is working on a piece of wood (-0.884184)
+INFO:__main__:a man and a woman are walking in the snow (-0.903790)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sleeping on a bench (-1.363380)
+INFO:__main__:a man in a white shirt is playing a game (-1.077938)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.024977)
+INFO:__main__:a small white dog is playing with a toy in the snow (-1.111197)
+INFO:__main__:a man in a white shirt is sitting at a table (-0.981248)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.232301)
+INFO:__main__:a group of people are riding bikes on a dirt track (-0.979883)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.005465)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.268385)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.237232)
+INFO:__main__:a woman in a red shirt is sitting on a bench (-1.068320)
+INFO:__main__:a man and a woman are walking on the beach (-0.945559)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a hat is holding a microphone (-1.434862)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.934632)
+INFO:__main__:a young girl in a pink shirt is sitting on a couch (-1.005992)
+INFO:__main__:a man in a black shirt is walking down the street (-0.941529)
+INFO:__main__:a group of people are standing in front of a building (-0.914540)
+INFO:__main__:a woman is sitting on a bench in front of a building (-1.036308)
+INFO:__main__:a black and white dog is running through the grass (-0.675332)
+INFO:__main__:a man in a white shirt is standing in front of a building (-1.010301)
+INFO:__main__:a man in a black shirt is sleeping on a train (-0.853596)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking in front of a building (-1.298746)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.074436)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.306220)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.057619)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.075689)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt walking down the sidewalk (-1.266578)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.969908)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.375101)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.228506)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.342784)
+INFO:__main__:a man and a woman are talking to each other (-0.893278)
+INFO:__main__:a young boy is sleeping on a couch (-0.979974)
+INFO:__main__:a man in a white shirt is sitting in a chair (-0.960921)
+INFO:__main__:a young boy is playing in a pool of water (-1.060122)
+INFO:__main__:a group of people are sitting at a table in a restaurant (-0.767112)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.028165)
+INFO:__main__:a soccer player in a red jersey is about to throw a ball (-1.045740)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.382000)
+INFO:__main__:a man in a red shirt is standing in front of a truck (-1.113566)
+INFO:__main__:a man in a blue shirt is standing in front of a train (-0.953394)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a mountain (-1.389548)
+INFO:__main__:a man in a black shirt is playing a guitar (-1.077072)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-1.017595)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a lake (-1.385323)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.117421)
+INFO:__main__:a man in a white shirt is sitting in a chair (-0.977980)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.069001)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a microphone (-1.299699)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.029806)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.011006)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.837923)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing on top of a large rock (-1.429672)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.942584)
+INFO:__main__:a man in a blue shirt is sitting in a chair (-0.977291)
+INFO:__main__:a group of people are walking down a snowy hill (-0.900850)
+INFO:__main__:a group of people are standing in front of a building (-0.933021)
+INFO:__main__:a man is sitting at a table in a restaurant (-1.016994)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.277049)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.271139)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.351328)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a construction site (-1.312630)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.264853)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the middle of a field (-1.442224)
+INFO:__main__:a black dog is playing with a white ball in the snow (-1.089659)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.914171)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.493181)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.335811)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a bike down the street (-1.385771)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.265929)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a brown dog (-1.509110)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.009279)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.903707)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.028223)
+INFO:__main__:a man in a red shirt is standing in front of a store (-1.059897)
+INFO:__main__:a man in a white shirt is standing in front of a building (-1.037975)
+INFO:__main__:a young boy in a striped shirt is sleeping on a couch (-0.923427)
+INFO:__main__:a man and a woman are talking to each other (-0.898672)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a train (-1.309242)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.427649)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.259126)
+INFO:__main__:a man in a black shirt is walking down the street (-0.923137)
+INFO:__main__:a man in a blue shirt is walking down the street (-0.982094)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.011805)
+INFO:__main__:a man and a woman are sitting on a bench in a park (-0.972920)
+INFO:__main__:a man in a hard hat is working on a train (-0.960071)
+INFO:__main__:a man in a white shirt is sleeping on the floor (-1.051116)
+INFO:__main__:a group of people standing in front of a large building (-0.832024)
+INFO:__main__:a little girl is playing with a toy in a pool (-1.007661)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is playing a guitar (-1.228115)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.085502)
+INFO:__main__:a man in a black shirt is talking on a cellphone (-0.888145)
+INFO:__main__:a black and white dog is standing in the snow (-0.961939)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.227418)
+INFO:__main__:a group of people are standing in front of a building (-0.852471)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.979448)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down a street (-1.221202)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.306371)
+INFO:__main__:a brown dog is playing with a ball in its mouth (-0.834912)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt walking down the street (-1.196359)
+INFO:__main__:a man and a woman are standing in front of a train (-0.977377)
+INFO:__main__:a group of people are standing in front of a building (-0.778320)
+INFO:__main__:a young boy in a red shirt is looking at the camera (-1.159179)
+INFO:__main__:a white dog is standing in front of a building (-1.088225)
+INFO:__main__:a man in a red jacket is sitting at a table (-1.214795)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.342543)
+INFO:__main__:a brown dog is running through the grass (-0.751739)
+INFO:__main__:a young boy in a blue shirt is looking at the camera (-1.057244)
+INFO:__main__:a man and a woman are standing in front of a store (-0.950075)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young boy with no shirt on is playing with a ball (-1.277891)
+INFO:__main__:a young boy in a blue shirt is sleeping on a couch (-1.009622)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a red motorcycle (-1.368545)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.946957)
+INFO:__main__:a man in a black shirt is walking down the street (-0.954615)
+INFO:__main__:a man and a woman are standing in front of a building (-0.833387)
+INFO:__main__:a man in a white shirt and blue jeans is walking down the street (-1.112983)
+INFO:__main__:a man is sitting on a bench in front of a building (-0.979444)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.914554)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a large tree (-1.411424)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.966991)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.213177)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a tree (-1.224039)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.930249)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.796961)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt walking down a sidewalk (-1.197578)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down a sidewalk (-1.279797)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is walking down a sidewalk (-1.239190)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.912822)
+INFO:__main__:a man in a white shirt is looking at a computer (-0.995279)
+INFO:__main__:a man in a white shirt is standing in front of a mirror (-1.180082)
+INFO:__main__:a man in a blue shirt is sleeping on the floor (-0.968915)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a crowd (-1.322449)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a roof (-1.464410)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.044891)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young man with no shirt on is holding a camera (-1.460641)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a large tree (-1.360879)
+INFO:__main__:a little girl in a pink dress is sitting on the floor (-1.005875)
+INFO:__main__:a baseball player in a red jersey is about to throw a ball (-1.029339)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.287992)
+INFO:__main__:a brown dog is playing with a red toy in the snow (-0.909149)
+INFO:__main__:a baseball player is about to hit the ball (-0.949480)
+INFO:__main__:a woman in a red shirt is sitting on a bench (-1.142439)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.282491)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.220276)
+INFO:__main__:a man in a red jacket is sleeping on a couch (-1.086665)
+INFO:__main__:a little boy in a red shirt is playing with a red toy (-1.092838)
+INFO:__main__:a man in a red jacket is standing in the snow (-1.185039)
+INFO:__main__:a man is surfing on a surfboard in the ocean (-0.931413)
+INFO:__main__:a man in a black shirt is standing in front of a store (-0.905370)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.036184)
+INFO:__main__:a brown and white dog is running through a grassy field (-0.776212)
+INFO:__main__:a brown and white dog is playing with a red toy (-1.031224)
+INFO:__main__:a man and a woman are sitting at a table in a room (-0.924729)
+INFO:__main__:a baseball player in a red jersey is about to hit the ball (-1.028738)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on a train (-1.242657)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.281240)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.866784)
+INFO:__main__:a man in a red shirt is standing in front of a store (-1.036370)
+INFO:__main__:a man in a white shirt is playing a guitar (-0.971015)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.077532)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.261732)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.293399)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is riding a skateboard down a street (-1.376344)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.045140)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a body of water (-1.170805)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.276533)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.892676)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young boy with no shirt on is playing with a toy (-1.401346)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.291899)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.093320)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.936914)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of the water (-1.322473)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.285766)
+INFO:__main__:a group of people are standing in front of a building (-0.835101)
+INFO:__main__:a man in a blue shirt is bowling in a bowling alley (-1.014813)
+INFO:__main__:a little boy is playing with a toy in the air (-1.078482)
+INFO:__main__:a woman in a pink shirt is sitting on a couch (-1.002496)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the middle of a field (-1.405409)
+INFO:__main__:a man in a blue shirt is sitting on a couch (-1.064559)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.323658)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.269609)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.482353)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down a sidewalk (-1.185680)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.986715)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.232807)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.356705)
+INFO:__main__:a soccer player in a red jersey is about to throw a ball (-1.032152)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young man with no shirt on is playing a golf game (-1.321370)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is riding a motorcycle (-1.360634)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a train (-1.304843)
+INFO:__main__:a man in a black shirt is sitting at a table (-1.085167)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-1.022866)
+INFO:__main__:a man in a black shirt is talking on his cellphone (-0.990291)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.988022)
+INFO:__main__:a man in a red shirt is standing in front of a store (-1.180201)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a bike on a road (-1.287230)
+INFO:__main__:a little boy in a red jacket is sleeping on a blanket (-1.044319)
+INFO:__main__:a man in a black shirt is standing in front of a store (-0.862825)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a train (-1.326971)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.206114)
+INFO:__main__:a man and a woman are standing in front of a building (-0.883474)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.898400)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is surfing on a wave (-1.334440)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.253840)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.071316)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.202319)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.303659)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.979653)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.257831)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.830117)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.205550)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.046604)
+INFO:__main__:a man in a white shirt is standing in front of a microphone (-1.099756)
+INFO:__main__:a man and a woman are dancing in front of a crowd (-0.939221)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is walking down a sidewalk (-1.281070)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is walking down a sidewalk (-1.250913)
+INFO:__main__:a young girl in a pink dress is sitting on a couch (-1.054270)
+INFO:__main__:a man in a red shirt is standing in front of a store (-1.156706)
+INFO:__main__:a black and white dog is running through the snow (-0.877686)
+INFO:__main__:a man in a blue shirt is sitting on a couch (-1.079970)
+INFO:__main__:a man in a black shirt is sitting at a table (-1.154902)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.363277)
+INFO:__main__:a man and a woman are walking down a city street (-0.938289)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a train (-1.317017)
+INFO:__main__:a group of people are walking in the snow (-0.748283)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.014890)
+INFO:__main__:a man in a white shirt is sitting on a couch (-1.018602)
+INFO:__main__:a man and a woman are walking along a beach (-0.883115)
+INFO:__main__:a young boy in a blue shirt is looking at the camera (-1.081261)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-1.025162)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.230213)
+INFO:__main__:a woman in a white shirt is sitting on a couch (-1.047200)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.242697)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.963764)
+INFO:__main__:a young boy in a blue shirt is playing in a pool (-1.134885)
+INFO:__main__:a man in a red shirt is sleeping on a couch (-1.019523)
+INFO:__main__:a man in a blue shirt is sitting in a chair (-1.013197)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no hair and a blue shirt is standing in front of (-1.517798)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a city (-1.331631)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.216309)
+INFO:__main__:a woman in a white dress is sitting on a couch (-1.058031)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.325620)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is surfing in the ocean (-1.335969)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.787462)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.875553)
+INFO:__main__:a man in a white shirt is looking at a camera (-1.094607)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a body of water (-1.267995)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is doing a trick on a skateboard (-1.307009)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.086359)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.228216)
+INFO:__main__:a woman in a black shirt is walking down the street (-1.010060)
+INFO:__main__:a man and a woman are talking to each other (-0.878057)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a red truck (-1.529644)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and black pants is riding a bike (-1.372402)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is sitting on a motorcycle (-1.277331)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking in the snow (-1.464280)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.025556)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing on top of a building (-1.341460)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.265489)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a wall (-1.354964)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.071607)
+INFO:__main__:a man in a red shirt is sleeping on a couch (-1.043956)
+INFO:__main__:a group of people walking down a sidewalk in front of a building (-0.897415)
+INFO:__main__:a small white dog is playing with a toy in the air (-1.159482)
+INFO:__main__:a man in a black shirt is walking down the sidewalk (-0.864978)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.201071)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the middle of a field (-1.436763)
+INFO:__main__:a man and a woman are standing on the beach (-1.034591)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking in the snow (-1.377390)
+INFO:__main__:a man in a red shirt is standing in front of a car (-1.032107)
+INFO:__main__:a black and white dog is running through a field (-0.836119)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.921355)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.897103)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on the ground (-1.492357)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.012919)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.259183)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.810548)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.230047)
+INFO:__main__:a man is sitting at a table in a restaurant (-0.995128)
+INFO:__main__:a man in a white shirt is working on a computer (-0.970920)
+INFO:__main__:a black and white dog is playing with a blue toy (-0.927334)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing on a rock (-1.382762)
+INFO:__main__:a man in a white shirt is looking at a computer screen (-0.943303)
+INFO:__main__:a young boy is sitting on a couch in a room (-1.014509)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is sitting on a bench (-1.301408)
+INFO:__main__:a woman in a white dress is talking on a cellphone (-0.951407)
+INFO:__main__:a man in a blue shirt is sleeping on a bench (-0.943066)
+INFO:__main__:a woman in a red and white dress is holding a microphone (-1.155929)
+INFO:__main__:a black and white dog is running through the grass (-0.747344)
+INFO:__main__:a woman in a red shirt is sitting at a table (-1.119796)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.005386)
+INFO:__main__:a brown dog and a brown dog are playing tug of war (-0.865738)
+INFO:__main__:a man and a woman are sitting on a couch in a room (-0.953650)
+INFO:__main__:a man and a woman are walking in the snow (-0.856756)
+INFO:__main__:a man in a white shirt is working on a piece of paper (-0.981301)
+INFO:__main__:a man in a red shirt is standing in front of a truck (-1.051144)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is surfing on a wave (-1.404930)
+INFO:__main__:a man in a black shirt is sitting on a couch (-1.081963)
+INFO:__main__:a man in a white shirt is sleeping on the floor (-1.079856)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.955849)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.112439)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.446047)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the snow (-1.508231)
+INFO:__main__:a man in a black shirt is standing in front of a microphone (-0.982946)
+INFO:__main__:a brown dog and a brown dog are playing tug of war (-0.794552)
+INFO:__main__:a man and a woman are standing in front of a fountain (-1.013851)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a boat in the water (-1.347002)
+INFO:__main__:a man and a woman are sitting on a couch in a room (-0.936856)
+INFO:__main__:a brown dog and a white dog are playing in the snow (-0.959081)
+INFO:__main__:a woman in a white shirt is standing in front of a counter (-1.058410)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down a street (-1.271591)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-0.981472)
+INFO:__main__:a group of people are standing in front of a building (-0.874855)
+INFO:__main__:a young boy is climbing up a rock face (-0.994484)
+INFO:__main__:a man in a white shirt is sitting in a chair (-0.970588)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.239050)
+INFO:__main__:a man in a white shirt and blue shorts is playing tennis (-1.029876)
+INFO:__main__:a young boy in a striped shirt is playing with a toy (-1.106044)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.278751)
+INFO:__main__:a woman in a white shirt and blue shorts is playing tennis (-1.005672)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the middle of a field (-1.353054)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.313080)
+INFO:__main__:a man in a white shirt is talking on a cellphone (-0.935964)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.341339)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a body of water (-1.141242)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is jumping in the air (-1.348054)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a helmet is riding a bike (-1.311833)
+INFO:__main__:a woman in a red shirt is sitting on a couch (-1.075584)
+INFO:__main__:a man in a black shirt is standing in front of a computer (-0.935920)
+INFO:__main__:a woman is sleeping on a couch in a living room (-1.006141)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.276780)
+INFO:__main__:a man in a blue shirt is standing in front of a car (-1.018411)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.015668)
+INFO:__main__:a young girl in a pink shirt is sitting on a couch (-1.094772)
+INFO:__main__:a black dog is running through the snow (-0.675512)
+INFO:__main__:a man in a red shirt is standing in front of a truck (-1.034387)
+INFO:__main__:a man in a white shirt is working on a piece of paper (-1.010538)
+INFO:__main__:a group of young girls are playing soccer on a field (-0.908761)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt walking down a sidewalk (-1.253310)
+INFO:__main__:a man in a blue shirt is standing in front of a car (-1.007552)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down a sidewalk (-1.200188)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a blue helmet is riding a bike (-1.424340)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-0.936794)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.768008)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.043113)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a cowboy hat is riding a horse (-1.329494)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on the roof of a building (-1.232953)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.295247)
+INFO:__main__:a little girl in a pink shirt is looking at the camera (-1.163595)
+INFO:__main__:a man in a blue shirt is working on a computer (-0.917786)
+INFO:__main__:a young boy is sleeping on a couch (-0.991766)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.974393)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-1.040554)
+INFO:__main__:a man in a white shirt is holding a microphone (-1.052494)
+INFO:__main__:a woman is sitting at a table in a restaurant (-0.953144)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.055028)
+INFO:__main__:a woman in a red shirt is standing in front of a store (-1.118681)
+INFO:__main__:a young boy is sleeping on a couch (-1.009437)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a crowd of people (-1.188089)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the woods (-1.333725)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.941449)
+INFO:__main__:a group of people walking down a street in front of a building (-0.855934)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.270966)
+INFO:__main__:a group of people are standing in front of a building (-0.896851)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.291208)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a rock in the snow (-1.393470)
+INFO:__main__:a brown and white dog is playing with a red toy (-0.958981)
+INFO:__main__:a little girl in a pink dress is sitting on a swing (-1.039043)
+INFO:__main__:a group of people are standing in front of a building (-0.934875)
+INFO:__main__:a man in a blue shirt is working on a boat (-0.987623)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.041579)
+INFO:__main__:a man in a blue shirt is sleeping on a bench (-0.944094)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in the grass (-1.403811)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a train (-1.316206)
+INFO:__main__:a little boy is playing with a toy in a pool (-1.065751)
+INFO:__main__:a little girl in a pink dress is playing with a hula hoop (-1.038017)
+INFO:__main__:a man and a woman are playing volleyball on the beach (-0.963316)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.301286)
+INFO:__main__:a football player in a red jersey is about to throw a ball (-1.006387)
+INFO:__main__:a man in a blue shirt is riding a bicycle (-1.003499)
+INFO:__main__:a man in a white shirt is working on a computer (-0.927775)
+INFO:__main__:a man in a red shirt is standing in front of a building (-1.051326)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.092801)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.995041)
+INFO:__main__:a brown and white dog is running through a field (-0.768346)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.930093)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.240699)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.342414)
+INFO:__main__:a man in a red shirt is climbing up a tree (-0.971782)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.261298)
+INFO:__main__:a man in a red jacket is standing in front of a truck (-1.108419)
+INFO:__main__:a soccer player in a red jersey is about to hit the ball (-1.031780)
+INFO:__main__:a little girl in a pink dress is sitting on a bench (-1.045967)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.375447)
+INFO:__main__:a young girl in a pink shirt is looking at the camera (-1.077578)
+INFO:__main__:a man in a red shirt is standing in front of a truck (-1.081428)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.041064)
+INFO:__main__:a man in a blue shirt is standing in front of a computer (-0.955042)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on the roof of a building (-1.179095)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.330163)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a tree (-1.382902)
+INFO:__main__:a young boy in a blue shirt is playing with a toy (-1.099362)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is walking down a road (-1.433715)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.287875)
+INFO:__main__:a group of people sitting on a bench in front of a building (-0.930210)
+INFO:__main__:a man in a white shirt is looking at the camera (-0.975421)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is climbing up a rock (-1.278864)
+INFO:__main__:a young boy in a blue shirt is playing with a toy (-1.071501)
+INFO:__main__:a man in a white shirt is sleeping on a bed (-0.949054)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in the woods (-1.367094)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.349950)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.908384)
+INFO:__main__:a black and white dog jumps over a hurdle (-0.894723)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.249215)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.958515)
+INFO:__main__:a man in a white shirt is sleeping on the floor (-1.035447)
+INFO:__main__:a black and white dog running through a field (-0.749651)
+INFO:__main__:a black and white dog is jumping over a hurdle (-0.804709)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.241675)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.283448)
+INFO:__main__:a woman in a white shirt is talking on a cellphone (-0.970656)
+INFO:__main__:a man in a blue shirt is sitting on a bench (-1.071216)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young man with no shirt is holding a tennis racket (-1.284980)
+INFO:__main__:a man in a white shirt is looking at a camera (-1.008192)
+INFO:__main__:a woman in a white shirt is standing in front of a store (-1.029361)
+INFO:__main__:a black and white dog is running down a path (-0.854816)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench (-1.471475)
+INFO:__main__:a man in a white shirt is working on a piece of wood (-0.913518)
+INFO:__main__:a little boy is playing with a toy in the snow (-1.128294)
+INFO:__main__:a man in a white shirt is standing in front of a store (-1.052218)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is walking down the sidewalk (-1.320708)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and blue shorts is jumping into the water (-1.322961)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.237035)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is riding a bike (-1.489153)
+INFO:__main__:a young boy in a red shirt is playing with a ball (-1.085729)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.289136)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.208618)
+INFO:__main__:a group of people are standing in front of a large fountain (-0.991968)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.813548)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.300814)
+INFO:__main__:a man in a white shirt is working on a piece of paper (-0.941841)
+INFO:__main__:a man in a yellow shirt is working on a roof (-0.972865)
+INFO:__main__:a man in a blue shirt is sitting on a couch (-1.121072)
+INFO:__main__:a man in a black shirt is standing in front of a store (-0.924242)
+INFO:__main__:a man in a blue shirt is standing in front of a store (-0.959206)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.187210)
+INFO:__main__:a group of people are playing soccer in a field (-0.941435)
+INFO:__main__:a woman is sitting at a table in a restaurant (-0.923480)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.054754)
+INFO:__main__:a man in a white shirt and black shorts is playing tennis (-1.063020)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-1.042224)
+INFO:__main__:a man in a red shirt is standing on a rock (-1.122412)
+INFO:__main__:a brown dog is running along the beach (-0.955388)
+INFO:__main__:a man in a black shirt is sleeping on a bench (-0.986874)
+INFO:__main__:a man in a red jacket is standing in front of a building (-1.012665)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.940879)
+INFO:__main__:a little girl in a pink shirt is looking at the camera (-1.098392)
+INFO:__main__:a young boy in a red shirt is playing in a pool (-1.142036)
+INFO:__main__:a man in a white shirt is standing in front of a store (-0.972630)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.288539)
+INFO:__main__:a football player in a red uniform is holding a football (-0.958381)
+INFO:__main__:a man in a blue shirt is standing in front of a car (-0.951754)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.232327)
+INFO:__main__:a man in a white shirt is holding a microphone (-1.004658)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.007183)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a mountain (-1.293582)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.922730)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.320661)
+INFO:__main__:a man in a white shirt is sitting on a couch (-1.099294)
+INFO:__main__:a woman in a black dress is sitting on a couch (-1.013236)
+INFO:__main__:a man and a woman are playing in the water (-1.046063)
+INFO:__main__:a man is sitting in a chair in front of a building (-0.962094)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.947063)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.248949)
+INFO:__main__:a person in a red jacket is climbing up a rock (-0.994101)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.190056)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.309508)
+INFO:__main__:a brown dog is playing with a red ball in its mouth (-1.071686)
+INFO:__main__:a black and white dog is running through a field (-0.771640)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.291087)
+INFO:__main__:a black and white dog is jumping over a hurdle (-0.802673)
+INFO:__main__:a man is sitting on a bench in front of a building (-0.848230)
+INFO:__main__:a woman in a white shirt is standing in front of a store (-1.020746)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a tree (-1.357234)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.275159)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a horse in a park (-1.414081)
+INFO:__main__:a brown dog is running through a grassy field (-0.819893)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a skateboard on a sidewalk (-1.259496)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is riding a red motorcycle (-1.366038)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-0.953759)
+INFO:__main__:a baseball player is about to hit the ball (-0.909672)
+INFO:__main__:a man and a woman are standing in front of a building (-0.845391)
+INFO:__main__:a man in a white shirt is sitting on a couch (-1.074176)
+INFO:__main__:a man in a red shirt is playing the guitar (-1.020729)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.238784)
+INFO:__main__:a man in a white shirt is working on a piece of paper (-0.939463)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-1.034659)
+INFO:__main__:a man in a blue shirt is sitting on a couch (-1.094065)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.992575)
+INFO:__main__:a young boy is sleeping on a couch (-0.998365)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.448077)
+INFO:__main__:a man in a red shirt is standing in front of a truck (-1.045461)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.242435)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.320405)
+INFO:__main__:a man in a white shirt and black shorts is playing tennis (-1.023471)
+INFO:__main__:a black and white dog is running through a field (-0.770807)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is playing a golf game (-1.484352)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.340948)
+INFO:__main__:a brown and white dog is running through the grass (-0.772536)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is walking down the street (-1.240151)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down a sidewalk (-1.428620)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.984161)
+INFO:__main__:a man in a red shirt is standing in front of a truck (-1.037544)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of the water (-1.372119)
+INFO:__main__:a man in a white shirt is standing in front of a store (-0.922789)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.373145)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.913226)
+INFO:__main__:a man is sitting on a bench in front of a building (-0.830334)
+INFO:__main__:a soccer player in a red jersey is about to hit the ball (-1.020664)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is working on a roof (-1.221911)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.368744)
+INFO:__main__:a man and a woman are swimming in a body of water (-0.935185)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.054808)
+INFO:__main__:a woman in a black dress is sitting on a couch (-1.013147)
+INFO:__main__:a woman in a white shirt is holding a baby (-1.168688)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.346731)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a red truck (-1.417257)
+INFO:__main__:a man in a white shirt is sitting on a couch (-1.100807)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-1.133763)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a red hat is standing in front of (-1.469317)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a crowd (-1.385487)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt sitting on a rock in the forest (-1.307043)
+INFO:__main__:a man in a red shirt is standing in front of a counter (-1.028667)
+INFO:__main__:a man in a white shirt is sleeping on a bed (-0.980232)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.221920)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a truck (-1.421979)
+INFO:__main__:a man in a white shirt is looking at a computer (-0.953107)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.893848)
+INFO:__main__:a woman is sitting at a table in a restaurant (-0.904182)
+INFO:__main__:a little girl in a pink shirt is looking at the camera (-1.125439)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.230449)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.007436)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.001080)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is playing the guitar (-1.325634)
+INFO:__main__:a man and a woman are sitting on a couch in a room (-0.979345)
+INFO:__main__:a young girl in a pink dress is sitting on a couch (-1.022349)
+INFO:__main__:a man in a blue kayak paddles through the water (-1.011051)
+INFO:__main__:a man in a white shirt and blue shorts is playing a game (-1.146555)
+INFO:__main__:a man in a black shirt is working on a computer (-0.916762)
+INFO:__main__:a man in a red shirt is standing in front of a car (-1.001654)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a large tree (-1.450107)
+INFO:__main__:a man is surfing on a surfboard in the ocean (-0.874563)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.033033)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.237596)
+INFO:__main__:a brown dog is playing with a red ball in the snow (-0.947222)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.301608)
+INFO:__main__:a soccer player in a red jersey is about to throw a ball (-1.031519)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.904633)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.942358)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.315758)
+INFO:__main__:a man in a white shirt is sitting at a table (-0.991938)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.907764)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.296996)
+INFO:__main__:a woman is sleeping on a couch in a room (-0.935346)
+INFO:__main__:a black and white dog is playing in the snow (-0.943631)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.103769)
+INFO:__main__:a young girl in a pink dress is looking at the camera (-1.032834)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.287530)
+INFO:__main__:a little girl is sleeping on a couch (-1.070007)
+INFO:__main__:a man and a woman are standing in front of a crowd (-1.055174)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a body of water (-1.291555)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.267863)
+INFO:__main__:a young girl in a pink shirt is looking at the camera (-1.058192)
+INFO:__main__:a man in a black shirt is standing in front of a store (-0.926384)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.047885)
+INFO:__main__:a group of people are standing in front of a building (-0.804443)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.305613)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.015183)
+INFO:__main__:a man in a blue shirt is working on a roof (-0.941724)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.439678)
+INFO:__main__:a man in a blue shirt is walking down the street (-0.993633)
+INFO:__main__:a woman in a black dress is sitting on a couch (-0.957267)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.926786)
+INFO:__main__:a man is sitting at a table in a restaurant (-0.948355)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is walking down a sidewalk (-1.328637)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a car (-1.498961)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.300488)
+INFO:__main__:a little girl in a pink shirt is looking at the camera (-1.145126)
+INFO:__main__:a young boy in a red shirt is playing with a toy (-1.125785)
+INFO:__main__:a man is sleeping on a couch in a living room (-0.954506)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.284699)
+INFO:__main__:a man is sitting on a bench in front of a building (-0.822261)
+INFO:__main__:a man in a blue shirt is playing a guitar (-0.964419)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.254376)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.051823)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a boat in the water (-1.310163)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.050568)
+INFO:__main__:a white dog is running through a field of leaves (-1.015001)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in the street (-1.400627)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.864167)
+INFO:__main__:a man in a red shirt is standing in front of a building (-1.044789)
+INFO:__main__:a man in a red jacket is riding a bike (-1.059683)
+INFO:__main__:a man in a blue shirt is sleeping on the floor (-0.944225)
+INFO:__main__:a person in a red jacket is walking in the snow (-0.952087)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young boy with no shirt on is running on a sidewalk (-1.283010)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.944689)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.273159)
+INFO:__main__:a man in a white shirt is walking down the street (-0.970376)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt sitting on a rock in a forest (-1.409218)
+INFO:__main__:a young boy is sleeping on a couch (-1.035817)
+INFO:__main__:a young girl in a pink shirt is looking at the camera (-1.061689)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.257631)
+INFO:__main__:a soccer player in a red jersey is about to throw a ball (-0.996923)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down a street (-1.266486)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.332032)
+INFO:__main__:a man in a white shirt is running on a track (-1.020989)
+INFO:__main__:a man in a black shirt is working on a computer (-0.953954)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.301553)
+INFO:__main__:a man in a black shirt is walking down the street (-0.883645)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.797656)
+INFO:__main__:a man in a black shirt is sitting in a chair (-0.974127)
+INFO:__main__:a man in a black shirt is talking on a cellphone (-0.960481)
+INFO:__main__:a man in a white shirt is sitting in a chair (-0.949366)
+INFO:__main__:a man in a red shirt is jumping in the air (-1.007777)
+INFO:__main__:a man in a blue shirt is standing in front of a store (-0.933669)
+INFO:__main__:a man in a red shirt is standing in front of a building (-1.019132)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.267318)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-0.902482)
+INFO:__main__:a little girl in a pink shirt is looking at the camera (-1.087608)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a boat in the water (-1.407629)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a fence (-1.400364)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.227791)
+INFO:__main__:a man is sleeping on a bench in front of a building (-0.897320)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.365596)
+INFO:__main__:a young boy in a red shirt is sleeping on a couch (-1.094668)
+INFO:__main__:a man in a white shirt is standing in front of a store (-1.041737)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.363399)
+INFO:__main__:a man and a woman are swimming in a body of water (-0.948723)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in the woods (-1.410652)
+INFO:__main__:a man in a blue shirt is working on a roof (-0.918189)
+INFO:__main__:a man in a white shirt and black shorts is playing tennis (-0.934803)
+INFO:__main__:a woman in a white shirt is standing in front of a counter (-1.066716)
+INFO:__main__:a man in a red shirt is sleeping on a couch (-0.958126)
+INFO:__main__:a man and a woman are walking along the beach (-0.883636)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-0.979742)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.955438)
+INFO:__main__:a man and a woman are standing in front of a fountain (-1.071152)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.377910)
+INFO:__main__:a baseball player in a red jersey is about to hit the ball (-0.994623)
+INFO:__main__:a young girl in a pink jacket is looking at the camera (-1.113315)
+INFO:__main__:a young boy in a striped shirt is looking at the camera (-1.039993)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.222012)
+INFO:__main__:a man in a white shirt is sleeping on a bed (-1.029127)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.314844)
+INFO:__main__:a man and a woman are walking on the beach (-0.985978)
+INFO:__main__:a woman in a white shirt is standing in front of a counter (-1.056585)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.053213)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in the snow (-1.506407)
+INFO:__main__:a man and a woman are sitting on a bench (-1.003144)
+INFO:__main__:a man in a red jacket is standing in front of a car (-1.032764)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.102804)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.329441)
+INFO:__main__:a man in a red shirt is sitting at a table outside (-1.138080)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on the roof of a building (-1.186718)
+INFO:__main__:a man in a white shirt is looking at a camera (-1.056673)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a truck (-1.371002)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-0.997504)
+INFO:__main__:a man in a red shirt is standing in front of a building (-0.982169)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young boy with no shirt on is playing with a soccer ball (-1.309678)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.880492)
+INFO:__main__:a woman is sitting at a table in a restaurant (-0.935637)
+INFO:__main__:a man in a white shirt is working on a piece of paper (-0.995031)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.213615)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a city (-1.320860)
+INFO:__main__:a man in a white shirt is sleeping on a bed (-1.039765)
+INFO:__main__:a man and a woman are sitting on a bench in a park (-0.907713)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.040035)
+INFO:__main__:a man in a red shirt is working on a bicycle (-1.017486)
+INFO:__main__:a man in a black shirt is working on a computer (-0.895042)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.212854)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young boy with no shirt is climbing a rock wall (-1.240767)
+INFO:__main__:a man and a woman are talking to each other (-0.950548)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.918639)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.291062)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.011563)
+INFO:__main__:a man in a white shirt is standing in front of a store (-1.033525)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.256708)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.256535)
+INFO:__main__:a woman in a pink shirt is looking at the camera (-1.054815)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.027259)
+INFO:__main__:a group of people are standing in front of a building (-0.804843)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.955629)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is doing a trick on a skateboard (-1.248085)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.955380)
+INFO:__main__:a man is sitting on a boat in the water (-1.003312)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a rock in the snow (-1.471576)
+INFO:__main__:a man in a blue shirt is standing in front of a store (-0.903791)
+INFO:__main__:a man in a white shirt is sitting in a chair (-0.965017)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.057334)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-1.005281)
+INFO:__main__:a woman in a white shirt is sitting on a couch (-1.023636)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a white shirt is riding a skateboard (-1.468650)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.319238)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.295861)
+INFO:__main__:a little boy is playing with a toy in a pool (-1.022646)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.248969)
+INFO:__main__:a black and white dog is standing on the side of a road (-1.043161)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.297560)
+INFO:__main__:a man in a white shirt is working on a computer (-0.958519)
+INFO:__main__:a man and a woman are sitting at a table in a room (-0.921304)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.237677)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.021163)
+INFO:__main__:a man in a white shirt is working on a piece of wood (-0.908665)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.208481)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a crowd of people (-1.357453)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.339247)
+INFO:__main__:a woman is sitting at a table in a restaurant (-0.964921)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.023842)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is walking down the street (-1.277146)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.836363)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.838939)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.085090)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a rock in the snow (-1.367589)
+INFO:__main__:a man is sleeping on a couch in front of a building (-1.033010)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.286607)
+INFO:__main__:a man in a black shirt is sleeping on the floor (-0.953479)
+INFO:__main__:a group of people are playing soccer in a field (-0.967126)
+INFO:__main__:a brown dog is running through a field (-0.934960)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.285003)
+INFO:__main__:a soccer player in a red jersey is about to hit the ball (-1.011733)
+INFO:__main__:a brown dog is running through a grassy field (-0.766197)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-0.963820)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a tree (-1.258115)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the middle of a field (-1.350251)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.061459)
+INFO:__main__:a man in a white shirt and blue shorts is playing a game (-1.185282)
+INFO:__main__:a man and a woman are walking in the snow (-0.834107)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.958992)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a wall (-1.401261)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.858842)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench (-1.347942)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is doing a trick on a ramp (-1.274017)
+INFO:__main__:a black and white dog is playing with a white ball (-0.980345)
+INFO:__main__:a young boy is sleeping on a blanket (-0.971054)
+INFO:__main__:a young girl in a pink dress is sleeping on a couch (-0.956304)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.042803)
+INFO:__main__:a man in a red shirt is working on a train (-0.953280)
+INFO:__main__:a young boy in a red shirt is playing with a red ball (-1.007119)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a tree (-1.424344)
+INFO:__main__:a baseball player in a red jersey is about to hit the ball (-0.997210)
+INFO:__main__:a man in a red shirt is standing in front of a store (-1.113539)
+INFO:__main__:a man in a white shirt is sitting on a couch (-0.964359)
+INFO:__main__:a black and white dog is running on a dirt road (-0.918323)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a train (-1.433351)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a body of water (-1.260812)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.794493)
+INFO:__main__:a man in a white shirt is talking on a cellphone (-0.888207)
+INFO:__main__:a man in a red jacket is standing in front of a truck (-1.065977)
+INFO:__main__:a man and a woman are sitting at a table in a room (-0.933293)
+INFO:__main__:a man in a white shirt and blue shorts is playing tennis (-1.075093)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.960688)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.422870)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a city (-1.335235)
+INFO:__main__:a man and a woman are standing in the water (-1.055310)
+INFO:__main__:a little girl in a pink shirt is looking at the camera (-1.060830)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.982896)
+INFO:__main__:a man in a red jacket is standing in front of a building (-1.138617)
+INFO:__main__:a black and white dog is running through the grass (-0.740880)
+INFO:__main__:a young boy in a red shirt is playing with a toy (-1.094186)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.327506)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.244039)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is playing with a ball (-1.433765)
+INFO:__main__:a person in a red jacket is skiing down a snowy hill (-0.962709)
+INFO:__main__:a man and a woman are talking to each other (-0.950738)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.832607)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.348938)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.273813)
+INFO:__main__:a brown dog and a brown dog are running in the sand (-0.859845)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.130610)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is doing a trick on a ramp (-1.201921)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.961512)
+INFO:__main__:a man in a white shirt is walking down the street (-0.877968)
+INFO:__main__:a man in a white shirt is sitting on a couch (-1.083928)
+INFO:__main__:a man is sitting at a table in a restaurant (-1.051099)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.276970)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is climbing up a rock wall (-1.254191)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.219389)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.101402)
+INFO:__main__:a young boy in a red shirt is playing with a red ball (-1.117704)
+INFO:__main__:a group of people are standing in front of a building (-0.752464)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.994233)
+INFO:__main__:a woman in a white shirt is standing in front of a store (-1.137590)
+INFO:__main__:a man in a white shirt is sleeping on the floor (-0.999634)
+INFO:__main__:a soccer player in a red jersey is about to throw a ball (-1.014226)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.032445)
+INFO:__main__:a man in a white shirt is working on a stove (-1.002317)
+INFO:__main__:a man in a red shirt is jumping on a trampoline (-1.011845)
+INFO:__main__:a group of people are sitting at a table in a restaurant (-0.941420)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.070518)
+INFO:__main__:a man and a woman are talking to each other (-0.853254)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing on the roof of a building (-1.215901)
+INFO:__main__:a man and a woman are walking on the beach (-0.902237)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.033842)
+INFO:__main__:a young girl in a pink dress is sitting on a couch (-0.988211)
+INFO:__main__:a man in a white shirt is working on a piece of paper (-0.962538)
+INFO:__main__:a man in a red shirt and blue jeans is riding a skateboard (-1.109573)
+INFO:__main__:a man in a cowboy hat is riding a horse in a rodeo (-0.888359)
+INFO:__main__:a man in a blue shirt is working on a piece of wood (-1.022810)
+INFO:__main__:a woman is sitting on a bench in front of a building (-0.975872)
+INFO:__main__:a little girl in a pink dress is looking at the camera (-1.120690)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a bike on a street (-1.271590)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a tree (-1.263003)
+INFO:__main__:a man in a white shirt is riding a horse in a rodeo (-1.033742)
+INFO:__main__:a man in a black shirt is sitting in a chair (-0.931299)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a truck (-1.356500)
+INFO:__main__:a man in a white shirt is playing tennis (-0.903035)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.262589)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.942649)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt jumping in the air at the beach (-1.320737)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt walking down the street (-1.143741)
+INFO:__main__:a man and a woman are walking down the street (-0.901903)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a truck (-1.410173)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the middle of a field (-1.403034)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.058613)
+INFO:__main__:a little girl in a pink dress is sleeping on a couch (-0.998430)
+INFO:__main__:a young girl is sleeping on a couch (-1.085795)
+INFO:__main__:a man and a woman are standing in front of the ocean (-1.021203)
+INFO:__main__:a group of people are standing in front of a building (-0.859718)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-1.017632)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.820464)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.294229)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young boy with no shirt on is running on the sidewalk (-1.370958)
+INFO:__main__:a young girl in a pink dress is sitting on a couch (-1.112583)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.320902)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in the street (-1.332704)
+INFO:__main__:a woman in a white shirt is sitting on a couch (-0.955759)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.042904)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is climbing up a rock (-1.259052)
+INFO:__main__:a young boy in a red shirt is playing with a toy (-1.116789)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.858642)
+INFO:__main__:a man and a woman are standing in front of a store (-1.056229)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.234899)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a crowd of people (-1.311046)
+INFO:__main__:a man in a blue shirt is standing in front of a store (-0.912089)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.900094)
+INFO:__main__:a man and a woman are walking on the beach (-0.877290)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.957030)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.008546)
+INFO:__main__:a man in a red jacket is standing in front of a truck (-1.131717)
+INFO:__main__:a soccer player in a red jersey is about to throw a ball (-1.035546)
+INFO:__main__:a group of people are standing in front of a building (-0.796639)
+INFO:__main__:a little girl in a pink dress is running in a field (-1.093146)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.234964)
+INFO:__main__:a man in a blue shirt is sitting in a chair (-0.980976)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.288929)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.218236)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.843663)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a rock in the ocean (-1.302418)
+INFO:__main__:a little girl in a pink dress is sleeping on a couch (-1.027523)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.934617)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.963708)
+INFO:__main__:a black dog is jumping into the water (-0.993172)
+INFO:__main__:a man in a white shirt is working on a piece of wood (-0.937277)
+INFO:__main__:a man and a woman are standing in front of a store (-0.948936)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.255961)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.331041)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing on a snow covered mountain (-1.413928)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.220558)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-0.930181)
+INFO:__main__:a woman in a bathing suit is standing on the beach (-1.021075)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-1.063576)
+INFO:__main__:a man in a red shirt is standing in front of a car (-1.074296)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of the ocean (-1.401161)
+INFO:__main__:a man and a woman are standing in front of a train (-0.924409)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.971132)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a large tree (-1.274132)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a helmet is riding a bicycle (-1.212342)
+INFO:__main__:a man in a black shirt is standing in front of a store (-0.891988)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.348097)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.234943)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-1.045692)
+INFO:__main__:a man in a red shirt is riding a bicycle (-1.069425)
+INFO:__main__:a young girl in a pink shirt is looking at the camera (-1.089352)
+INFO:__main__:a little girl in a pink shirt is sitting on the grass (-0.944875)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a crowd (-1.301580)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.264561)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a bike on a sidewalk (-1.283979)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a bicycle (-1.326520)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.351097)
+INFO:__main__:a woman in a white shirt is sitting on a couch (-0.997149)
+INFO:__main__:a dog runs through the water with a stick in its mouth (-0.743753)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.248824)
+INFO:__main__:a man in a black shirt is skateboarding on the sidewalk (-1.018630)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a rock in the woods (-1.320965)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.217350)
+INFO:__main__:a man in a red shirt is standing on a beach (-1.129531)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.018813)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.245770)
+INFO:__main__:a little girl in a pink shirt is looking at the camera (-1.095357)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is doing a stunt on a ramp (-1.395034)
+INFO:__main__:a man is sitting on a bench in front of the water (-0.972335)
+INFO:__main__:a man and a woman are sitting at a table in a room (-0.913483)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.334134)
+INFO:__main__:a man in a white shirt is working on a computer (-0.938839)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.039930)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a tree (-1.217683)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young boy with no shirt is standing in front of a fountain (-1.267563)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.285779)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.172910)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.282625)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is doing a trick on a skateboard (-1.311893)
+INFO:__main__:a man and a woman are sitting on a couch (-0.951971)
+INFO:__main__:a man and a woman are sitting at a table in a room (-0.923351)
+INFO:__main__:a man in a blue shirt is standing in front of a car (-0.983605)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.301757)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a fruit stand (-1.377266)
+INFO:__main__:a young girl in a red jacket is looking at the camera (-1.093437)
+INFO:__main__:a woman is sitting on a bench in front of a building (-0.899625)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is sitting on a bench (-1.312969)
+INFO:__main__:a man is sleeping on a couch in front of a building (-0.993852)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.332408)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt walking down a sidewalk (-1.242158)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench (-1.334280)
+INFO:__main__:a man and a woman are standing in front of a train station (-0.896898)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing on a sidewalk (-1.408932)
+INFO:__main__:a man in a white shirt is sitting in a chair (-0.946925)
+INFO:__main__:a brown dog and a white dog are playing in the snow (-0.859437)
+INFO:__main__:a man in a white shirt is working on a piece of paper (-0.950472)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.980203)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing on a snowy mountain (-1.469281)
+INFO:__main__:a black and white dog is running through a grassy field (-0.856201)
+INFO:__main__:a young boy in a red shirt is standing in a fountain (-1.175453)
+INFO:__main__:a man in a white shirt is sleeping on the floor (-0.981357)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.228171)
+INFO:__main__:a man in a cowboy hat is riding a horse in a rodeo (-0.817805)
+INFO:__main__:a black and white dog is running through the grass (-0.772091)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.292044)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.239868)
+INFO:__main__:a man in a red shirt is standing in front of a crowd (-1.021132)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.310188)
+INFO:__main__:a young girl in a pink shirt is looking at the camera (-1.111599)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.850069)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.342973)
+INFO:__main__:a man in a red shirt is standing in front of a counter (-1.190352)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a bike down a street (-1.384845)
+INFO:__main__:a man in a black shirt is sleeping on a subway train (-0.889529)
+INFO:__main__:a woman in a white shirt is standing in front of a store (-1.089814)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.404760)
+INFO:__main__:a black and white dog is running through the snow (-0.963698)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.017032)
+INFO:__main__:a group of people are standing on a snowy hill (-1.031326)
+INFO:__main__:a young boy is swimming in a pool (-0.964744)
+INFO:__main__:a man in a red jacket is jumping in the air (-1.080658)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.872503)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.258003)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.308744)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is riding a motorcycle (-1.326916)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.267724)
+INFO:__main__:a girl in a pink dress is sitting on a couch (-0.954149)
+INFO:__main__:a soccer player in a red jersey is about to hit a ball (-1.019231)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.281087)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is surfing on a wave (-1.409781)
+INFO:__main__:a black and white dog is jumping over a hurdle (-0.871488)
+INFO:__main__:a person in a red jacket is jumping in the air (-1.148065)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.270550)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.048862)
+INFO:__main__:a little girl in a pink jacket is sitting on a blanket (-1.087424)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.805570)
+INFO:__main__:a man in a white shirt is sitting on a couch (-1.004110)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-0.969995)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on the roof of a building (-1.338248)
+INFO:__main__:a man in a white shirt is working on a piece of wood (-1.056709)
+INFO:__main__:a brown dog and a white dog are playing tug of war (-0.896705)
+INFO:__main__:a man in a white shirt is working on a computer (-0.894473)
+INFO:__main__:a black and white dog is running on the beach (-0.776220)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.271123)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-0.945523)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is riding a red motorcycle (-1.466291)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-1.072325)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on the roof of a building (-1.273918)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a blanket (-1.370253)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on stage in front of a microphone (-1.252616)
+INFO:__main__:a man in a hard hat is working on a train (-0.971703)
+INFO:__main__:a man in a white shirt is sitting in a chair (-0.972422)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a motorcycle (-1.355585)
+INFO:__main__:a woman in a white shirt and white shorts is playing tennis (-0.980450)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.053203)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.975056)
+INFO:__main__:a man in a yellow shirt is standing in front of a building (-1.084319)
+INFO:__main__:a young boy in a red shirt is playing soccer (-1.012265)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.999586)
+INFO:__main__:a man in a blue shirt is sitting in a chair (-1.033659)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-0.918172)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-0.890411)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a construction site (-1.326453)
+INFO:__main__:a little girl in a pink shirt is sitting at a table (-1.104660)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.053567)
+INFO:__main__:a man in a black shirt is sitting in a chair (-0.945958)
+INFO:__main__:a young boy in a striped shirt is looking at the camera (-1.035475)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-1.040060)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.116448)
+INFO:__main__:a man in a red jacket is climbing up a rock (-1.062096)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.032590)
+INFO:__main__:a young girl in a pink shirt is sitting on a couch (-1.126875)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.068710)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.274990)
+INFO:__main__:a group of people are standing in front of a building (-0.811007)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.065637)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a rock in the snow (-1.362832)
+INFO:__main__:a young girl in a pink shirt is sitting at a table (-1.110958)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a train (-1.363824)
+INFO:__main__:a man in a white shirt is standing in front of a building (-1.019636)
+INFO:__main__:a young boy is sleeping on a couch in a room (-1.057919)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.259238)
+INFO:__main__:a man in a white shirt is sitting on a couch (-1.011388)
+INFO:__main__:a young boy in a red shirt and blue jeans is running down a (-1.129828)
+INFO:__main__:a black and white dog is running through a grassy field (-0.754460)
+INFO:__main__:a young girl in a pink dress is sitting on a couch (-1.043928)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.132360)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.989337)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is doing a trick on a ramp (-1.405796)
+INFO:__main__:a man in a blue shirt is working on a piece of wood (-0.920999)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-0.949070)
+INFO:__main__:a man in a red shirt and blue shorts is playing a game (-1.162528)
+INFO:__main__:a baseball player in a red jersey is about to hit the ball (-0.977545)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.291864)
+INFO:__main__:a group of people standing in front of a building (-0.830817)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a truck (-1.390151)
+INFO:__main__:a man in a white shirt is sleeping on the floor (-1.055051)
+INFO:__main__:a man in a white shirt and blue jeans is playing a game (-1.128626)
+INFO:__main__:a woman is sitting on a bench in front of a building (-1.027572)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.869877)
+INFO:__main__:a man and a woman are sitting in a grassy field (-1.049168)
+INFO:__main__:a man and a woman are walking down the street (-0.940474)
+INFO:__main__:a man in a white shirt is sitting on a couch (-1.029333)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a crowd (-1.411216)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a tree (-1.294313)
+INFO:__main__:a man in a blue shirt is standing in front of a store (-0.933762)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.211498)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.290401)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.328933)
+INFO:__main__:a man in a white shirt is standing in front of a store (-0.905495)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is walking down the street (-1.298995)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a large tree (-1.416019)
+INFO:__main__:a man in a black shirt is talking on a cellphone (-0.839242)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.841017)
+INFO:__main__:a little girl is sleeping on a couch (-1.044681)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.351031)
+INFO:__main__:a group of people are standing in front of a restaurant (-0.770378)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.427007)
+INFO:__main__:a man in a white shirt is sitting in a chair (-0.990370)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a construction site (-1.345909)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.272186)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.064416)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on a rock (-1.178895)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.258527)
+INFO:__main__:a man and a woman are standing in front of the ocean (-1.018725)
+INFO:__main__:a young boy in a blue shirt is sitting on a couch (-1.098312)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is doing a handstand on a skateboard (-1.365665)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.100865)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of the water (-1.389370)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-1.029767)
+INFO:__main__:a young boy in a red shirt and blue shorts is running (-1.133715)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.025285)
+INFO:__main__:a man in a white shirt is holding a microphone (-0.986020)
+INFO:__main__:a soccer player in a red jersey is about to throw a ball (-1.023293)
+INFO:__main__:a man in a white shirt is working on a train (-0.979960)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.260677)
+INFO:__main__:a man is sitting on a bench in the middle of a street (-0.933996)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.219075)
+INFO:__main__:a man in a white shirt and blue shorts is playing a game (-1.126454)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a large boat (-1.466434)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.436085)
+INFO:__main__:a young boy in a red shirt is playing with a red ball (-1.160372)
+INFO:__main__:a man and a woman are sitting on a boat in the water (-0.990349)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.246026)
+INFO:__main__:a young boy in a red shirt is playing with a toy (-1.123050)
+INFO:__main__:a black and white dog is laying on the floor (-0.861547)
+INFO:__main__:a man in a red shirt is sleeping on a bus (-0.959060)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.353717)
+INFO:__main__:a black and white dog is sleeping on a bed (-0.911219)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.071600)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.312217)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.331807)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.904308)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-0.894572)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.251787)
+INFO:__main__:a man and a woman are sitting on a bench in a city (-1.034977)
+INFO:__main__:a young girl in a pink shirt is sitting on a couch (-1.082468)
+INFO:__main__:a soccer player in a red jersey is about to throw a ball (-1.017458)
+INFO:__main__:a black and white dog is playing with a blue toy (-0.983969)
+INFO:__main__:a man and a woman are sitting at a table in a room (-0.916736)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on a piece of wood (-1.456571)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.245042)
+INFO:__main__:a man in a white shirt is sitting on a couch (-0.960645)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.302173)
+INFO:__main__:a man in a white shirt is standing in front of a store (-0.990344)
+INFO:__main__:a soccer player in a red jersey is trying to catch a ball (-1.034215)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt sitting on a bench in the woods (-1.329691)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.096652)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.252615)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.226252)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.264885)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.796803)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.269804)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.278247)
+INFO:__main__:a man in a blue shirt is working on a piece of wood (-0.920466)
+INFO:__main__:a man and a woman are standing in front of a truck (-1.060683)
+INFO:__main__:a woman in a black and white dress is smiling (-1.189061)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the street (-1.346057)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a large truck (-1.582723)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-0.992573)
+INFO:__main__:a man in a white shirt is sleeping on a bed (-0.948812)
+INFO:__main__:a man in a white shirt and black shorts is playing tennis (-0.974440)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.180789)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.198598)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.034816)
+INFO:__main__:a young boy is playing with a toy in a pool (-1.061555)
+INFO:__main__:a young boy in a blue shirt is looking at the camera (-1.097335)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.081561)
+INFO:__main__:a man in a red shirt is standing in front of a truck (-1.060647)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-0.984092)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.921922)
+INFO:__main__:a man in a black shirt is sitting in a chair (-0.995877)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.240935)
+INFO:__main__:a man is sitting on a bench in front of a building (-0.878161)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.841150)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.332714)
+INFO:__main__:a young boy is playing with a toy in the snow (-1.110448)
+INFO:__main__:a woman in a white shirt is sitting on a couch (-0.962548)
+INFO:__main__:a little boy is playing with a toy toy in the grass (-0.975023)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is walking down a sidewalk (-1.328355)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a bike on a dirt road (-1.286084)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.471665)
+INFO:__main__:a man in a red shirt is standing in a pool of water (-1.203192)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-1.002601)
+INFO:__main__:a man in a red shirt is standing in front of a truck (-1.109842)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.903558)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a rock (-1.202076)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.048998)
+INFO:__main__:a man and a woman are sitting on a boat in the water (-0.958428)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.937145)
+INFO:__main__:a woman in a white shirt is standing in front of a store (-1.105825)
+INFO:__main__:a man in a white shirt is sitting in a chair (-0.989198)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.058280)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.281214)
+INFO:__main__:a man in a red shirt is sitting at a table (-1.173909)
+INFO:__main__:a man in a blue shirt is standing in front of a truck (-1.025305)
+INFO:__main__:a young boy in a red shirt is jumping on a trampoline (-1.062522)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt climbs a rock wall (-1.217946)
+INFO:__main__:a young boy in a red shirt is playing soccer (-1.089375)
+INFO:__main__:a man in a white shirt is sleeping on a bed (-1.043300)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.274442)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.016301)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.929359)
+INFO:__main__:a man in a red shirt is jumping in the air (-1.053482)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.309628)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.173010)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.093253)
+INFO:__main__:a man in a blue shirt is sitting on a bench (-1.052782)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.292572)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.250471)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.342914)
+INFO:__main__:a man in a white shirt is talking to a woman in a white (-0.919238)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.342650)
+INFO:__main__:a group of people are standing in front of a building (-0.902183)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-1.031118)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.253173)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in the street (-1.334337)
+INFO:__main__:a woman in a white shirt is talking on her cellphone (-0.962332)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is riding a horse in a field (-1.451946)
+INFO:__main__:a man in a blue shirt is sitting on a couch (-1.064207)
+INFO:__main__:a group of people are playing soccer on a grassy field (-0.925888)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.271612)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.375186)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-1.043612)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young man with no shirt and a beard is holding a sign (-1.585619)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.311357)
+INFO:__main__:a man in a white shirt is working on a computer (-0.944512)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a crowd (-1.303945)
+INFO:__main__:a brown and white dog is running through the snow (-0.788102)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.357003)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.902068)
+INFO:__main__:a man in a white shirt is working on a computer (-0.932373)
+INFO:__main__:a man and a woman are standing in front of a large tree (-1.009159)
+INFO:__main__:a man in a red shirt is sitting on a bench (-1.179556)
+INFO:__main__:a man in a blue shirt is standing in front of a store (-0.904686)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a blue helmet is riding a bike (-1.477034)
+INFO:__main__:a man and a woman are sitting on a rock in the water (-1.018895)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.230658)
+INFO:__main__:a man in a white shirt is working on a piece of paper (-1.024126)
+INFO:__main__:a man and a woman are standing in front of a fountain (-0.995857)
+INFO:__main__:a man and a woman are standing in front of a lake (-0.998066)
+INFO:__main__:a group of people are walking along a beach (-0.996174)
+INFO:__main__:a man in a black shirt is walking down the street (-0.904605)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no hair and a beard is sitting on a bench (-1.304877)
+INFO:__main__:a little girl in a pink shirt is playing in a pool (-1.165765)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in the street (-1.316282)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a truck (-1.387234)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.256908)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.280133)
+INFO:__main__:a man is sitting on a bench in front of a building (-0.943932)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.293403)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.060753)
+INFO:__main__:a man in a white shirt is sitting in a chair (-0.957271)
+INFO:__main__:a man and a woman are walking down a sidewalk (-0.932771)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the snow (-1.448117)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.002690)
+INFO:__main__:a brown dog is swimming in a pool (-0.785210)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a cowboy hat is riding a horse (-1.368590)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.065979)
+INFO:__main__:a man in a black shirt is sitting in a chair (-0.995066)
+INFO:__main__:a man in a black shirt is sleeping on the floor (-0.960799)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.031197)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is riding a bicycle (-1.483016)
+INFO:__main__:a young boy in a red shirt is playing with a toy (-1.064593)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.278164)
+INFO:__main__:a man in a white shirt is working on a computer (-0.963584)
+INFO:__main__:a man in a white shirt is walking down the street (-0.959977)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.331172)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a large tree (-1.500837)
+INFO:__main__:a baseball player in a red jersey is about to throw a ball (-0.988678)
+INFO:__main__:a man in a white shirt is sitting at a table (-0.989666)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on the roof of a building (-1.294795)
+INFO:__main__:a woman in a black shirt is sitting on a couch (-0.951121)
+INFO:__main__:a man in a white shirt is holding a microphone (-1.185446)
+INFO:__main__:a little boy is playing with a toy in a living room (-1.029828)
+INFO:__main__:a man and a woman are sitting at a table in a room (-0.890802)
+INFO:__main__:a woman in a pink shirt is sitting on a bench (-1.031282)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.335787)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-0.944829)
+INFO:__main__:a group of people are sitting around a table in a room (-0.844394)
+INFO:__main__:a group of people are standing in front of a building (-0.973155)
+INFO:__main__:a man in a black shirt is walking down the street (-0.886597)
+INFO:__main__:a man in a red shirt is standing in front of a building (-1.077481)
+INFO:__main__:a man in a white shirt is working on a piece of paper (-0.922780)
+INFO:__main__:a group of people are sitting on a boat in the water (-0.977596)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.992138)
+INFO:__main__:a man in a blue shirt is working on a piece of paper (-0.973900)
+INFO:__main__:a little girl in a pink shirt is sitting in a pool (-1.122807)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.025806)
+INFO:__main__:a man in a white shirt is sitting in a chair (-0.984640)
+INFO:__main__:a man in a white shirt is standing in front of a store (-0.973919)
+INFO:__main__:a little girl in a pink shirt is sitting on a couch (-1.030822)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.903065)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.230108)
+INFO:__main__:a man and a woman are sitting on a couch (-0.908624)
+INFO:__main__:a man in a white shirt is sleeping on a bed (-0.967283)
+INFO:__main__:a soccer player in a red jersey is about to hit the ball (-1.005758)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.012120)
+INFO:__main__:a man in a red shirt is standing in front of a store (-1.165378)
+INFO:__main__:a man in a red and white uniform is running on a track (-1.109342)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.347107)
+INFO:__main__:a group of people are standing in front of a construction site (-1.039143)
+INFO:__main__:a group of people are standing in front of a restaurant (-0.827215)
+INFO:__main__:a man in a blue shirt is looking at the camera (-1.053530)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.221356)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.047270)
+INFO:__main__:a man is sitting on a bench in front of a building (-0.840476)
+INFO:__main__:a person in a red jacket is skiing down a snowy hill (-0.984947)
+INFO:__main__:a group of people are standing in front of a building (-0.820901)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.274826)
+INFO:__main__:a person in a red jacket is riding a bike in the snow (-0.981054)
+INFO:__main__:a man in a red jacket is standing in the snow (-0.926946)
+INFO:__main__:a young boy in a blue shirt is looking at the camera (-1.122790)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.269530)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a white helmet is riding a bike (-1.623182)
+INFO:__main__:a man in a white shirt and blue shorts is playing volleyball (-1.176220)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young boy with no shirt on is running on a sidewalk (-1.241058)
+INFO:__main__:a woman is sitting at a table in a restaurant (-0.929626)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a car (-1.316664)
+INFO:__main__:a man and a woman are walking on the beach (-0.882195)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench (-1.389711)
+INFO:__main__:a man is sitting on a bench in front of a building (-0.887286)
+INFO:__main__:a black and white dog is standing in front of a building (-0.934520)
+INFO:__main__:a baseball player is about to hit the ball (-0.930397)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is riding a bike (-1.417398)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.029262)
+INFO:__main__:a man in a black shirt is sitting at a table (-1.085777)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a train (-1.277531)
+INFO:__main__:a man and a woman are standing in front of a large fountain (-1.082864)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.081806)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-0.947657)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.000841)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.901714)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is shoveling snow in the snow (-1.474443)
+INFO:__main__:a man in a blue shirt is sitting on a blanket (-1.175337)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking in front of a building (-1.267875)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.284087)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.326400)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.841870)
+INFO:__main__:a young boy is playing with a red ball on a playground (-0.997570)
+INFO:__main__:a young girl in a bathing suit is swimming in the ocean (-1.035642)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.953086)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.882248)
+INFO:__main__:a man in a white shirt and blue shorts is playing tennis (-1.083001)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a tree (-1.287793)
+INFO:__main__:a brown and white dog is jumping over a hurdle (-0.807115)
+INFO:__main__:a man in a red shirt is standing in front of a car (-1.031988)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a boat in the water (-1.374034)
+INFO:__main__:a man in a white shirt is standing in front of a crowd (-0.871024)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.863232)
+INFO:__main__:a soccer player in a red jersey is about to hit the ball (-1.021133)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.228455)
+INFO:__main__:a man in a white shirt is sleeping on the floor (-1.068171)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.355536)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt walking down a sidewalk (-1.201497)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on a piece of wood (-1.338258)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is doing a trick on a skateboard (-1.249071)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a train (-1.338273)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is riding a bike on a beach (-1.263056)
+INFO:__main__:a brown dog is running through a field of grass (-0.757352)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.200637)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-0.929767)
+INFO:__main__:a brown and white dog is sleeping on a couch (-1.057732)
+INFO:__main__:a man in a blue shirt is working on a piece of wood (-0.955000)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.238392)
+INFO:__main__:a little girl in a pink shirt is sitting in a chair (-1.087152)
+INFO:__main__:a woman in a white shirt is looking at the camera (-1.062345)
+INFO:__main__:a young boy in a red shirt is playing in a pool (-0.987304)
+INFO:__main__:a man in a white shirt is working on a train (-0.980467)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is running on a sidewalk (-1.337164)
+INFO:__main__:a little girl in a pink dress is looking at the camera (-1.001892)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.043742)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.969294)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.383157)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down a sidewalk (-1.262863)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a boat in the water (-1.386242)
+INFO:__main__:a man on a bike is jumping over a ramp (-0.978140)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.021055)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in the snow (-1.331805)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.952192)
+INFO:__main__:a man in a white shirt is sitting on the floor (-1.160175)
+INFO:__main__:a man in a blue shirt is sitting on a bench (-1.005741)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a fence (-1.425302)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is walking down a road (-1.417890)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a crowd (-1.261840)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.329282)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.082667)
+INFO:__main__:a man in a red shirt is riding a bicycle (-1.020665)
+INFO:__main__:a woman in a white shirt is looking at the camera (-1.068620)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.286007)
+INFO:__main__:a group of people are standing in front of a building (-0.745892)
+INFO:__main__:a man is sleeping on a bench in front of a building (-0.803855)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a body of water (-1.278856)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a cowboy hat is riding a horse (-1.424530)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.019108)
+INFO:__main__:a little girl in a pink shirt is jumping on a trampoline (-1.101598)
+INFO:__main__:a little girl in a red jacket is playing with a red toy (-1.166994)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.935429)
+INFO:__main__:a little boy is sleeping on a bed (-0.947236)
+INFO:__main__:a young boy is swimming in a pool (-0.958109)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a crowd (-1.337110)
+INFO:__main__:a young girl in a pink shirt is looking at the camera (-1.094971)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a cowboy hat is riding a horse (-1.298684)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.080975)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.100137)
+INFO:__main__:a young boy in a blue shirt is playing with a toy (-1.155556)
+INFO:__main__:a young girl in a red shirt is looking at the camera (-1.121720)
+INFO:__main__:a man is sleeping on a couch in the snow (-1.029939)
+INFO:__main__:a man in a white shirt and black shorts is playing tennis (-1.009594)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.287824)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.489873)
+INFO:__main__:a man in a blue shirt is standing in front of a car (-1.002527)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.927207)
+INFO:__main__:a man in a blue shirt is standing in front of a car (-1.001672)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.013855)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.346065)
+INFO:__main__:a group of people are standing in front of a restaurant (-0.807896)
+INFO:__main__:a man in a red shirt is jumping off a snowy hill (-1.143986)
+INFO:__main__:a man and a woman are standing in front of a train station (-0.946901)
+INFO:__main__:a man in a white shirt is sitting on a couch (-1.018999)
+INFO:__main__:a man in a red shirt is standing in front of a building (-0.983548)
+INFO:__main__:a man in a white shirt is sleeping on the floor (-0.995654)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is playing a guitar in a crowd (-1.408027)
+INFO:__main__:a man in a blue shirt is working on a train (-0.999601)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young man with no shirt on is doing a skateboard trick (-1.330625)
+INFO:__main__:a man in a red jacket is skiing down a snowy hill (-0.908533)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.875364)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the middle of the road (-1.452111)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.016742)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young man with no shirt on is playing a guitar (-1.373520)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.865162)
+INFO:__main__:a man in a blue shirt is walking down the street (-0.954389)
+INFO:__main__:a young girl in a pink shirt is looking at the camera (-1.012314)
+INFO:__main__:a man in a black shirt is looking at the camera (-1.018518)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.972278)
+INFO:__main__:a little boy is playing with a toy in a pool (-1.101548)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.932596)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.260754)
+INFO:__main__:a young boy in a blue shirt is sitting in a chair (-1.063754)
+INFO:__main__:a man in a white shirt is sitting in a chair (-1.055881)
+INFO:__main__:a little girl in a pink shirt is sitting on a couch (-1.124103)
+INFO:__main__:a man and a woman are standing in front of a store (-0.942516)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.075794)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.260127)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-0.861305)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is riding a bicycle (-1.339663)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.341926)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is sitting on a bench (-1.319728)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sleeping on a bench (-1.397080)
+INFO:__main__:a man and a woman are standing in front of a store (-0.910821)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing on top of a building (-1.345867)
+INFO:__main__:a man in a red jacket is standing in front of a truck (-1.005754)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.003892)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.280631)
+INFO:__main__:a man in a red shirt is standing in front of a building (-1.208790)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.273830)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.329116)
+INFO:__main__:a man in a red shirt is riding a bike down a road (-1.097025)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.368271)
+INFO:__main__:a young boy in a striped shirt is playing with a toy (-1.088597)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-1.053881)
+INFO:__main__:a man and a woman are dancing in front of a crowd (-0.944848)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-1.119643)
+INFO:__main__:a little boy in a red jacket is playing with a toy (-1.063500)
+INFO:__main__:a man in a white shirt is about to hit a volleyball (-0.929096)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.291280)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.260560)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down a snow covered hill (-1.411224)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a large tree (-1.424268)
+INFO:__main__:a black and white dog is playing with a white dog (-0.908471)
+INFO:__main__:a woman in a white shirt is looking at the camera (-1.027325)
+INFO:__main__:a man in a red shirt is sitting on a motorcycle (-1.023149)
+INFO:__main__:a young boy is sleeping on a couch in a living room (-1.033467)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.344037)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a brown dog (-1.405474)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.946512)
+INFO:__main__:a man in a black shirt is sleeping on a couch (-1.003052)
+INFO:__main__:a man is sleeping on a couch in front of a building (-0.936222)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.216483)
+INFO:__main__:a man in a red shirt is working on a train (-0.988692)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing on top of a cliff (-1.351288)
+INFO:__main__:a man and a woman are walking along a beach (-0.938889)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a field (-1.427469)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-0.988991)
+INFO:__main__:a man in a blue shirt is sitting in a chair (-0.948635)
+INFO:__main__:a man in a red shirt is sitting on a bench (-1.152440)
+INFO:__main__:a little boy is playing with a toy toy in the snow (-0.999637)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.833537)
+INFO:__main__:a man in a white shirt is working on a piece of paper (-0.930358)
+INFO:__main__:a young boy is sleeping on a couch (-1.035691)
+INFO:__main__:a man and a woman are standing in front of a car (-0.998845)
+INFO:__main__:a man and a woman are dancing in front of a building (-0.907861)
+INFO:__main__:a woman is sleeping on a couch in a room (-0.978017)
+INFO:__main__:a little girl in a pink dress is looking at the camera (-1.069291)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.022035)
+INFO:__main__:a man and a woman are standing in front of a fountain (-0.981622)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing on a rock (-1.355070)
+INFO:__main__:a young boy is sleeping on a couch in a room (-1.036604)
+INFO:__main__:a man in a red shirt is walking down the street (-1.036319)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.842392)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.331344)
+INFO:__main__:a soccer player in a red jersey is trying to catch a ball (-1.038125)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a cowboy hat is riding a horse (-1.409334)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young man with no shirt is doing a trick on a skateboard (-1.198989)
+INFO:__main__:a woman in a white shirt is looking at a computer (-0.957434)
+INFO:__main__:a man in a blue shirt is walking down a street (-0.949571)
+INFO:__main__:a man and a woman are standing in front of a car (-1.084167)
+INFO:__main__:a woman is sitting at a table in a restaurant (-0.963863)
+INFO:__main__:a woman in a white dress is walking down the street (-0.948060)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.040401)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.027528)
+INFO:__main__:a baseball player in a red jersey is about to hit the ball (-0.973105)
+INFO:__main__:a man in a white shirt is walking down the street (-0.921341)
+INFO:__main__:a man and a woman are walking down the street (-0.847606)
+INFO:__main__:a black and white dog is running through the snow (-0.772609)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.814012)
+INFO:__main__:a man in a blue shirt is standing in front of a building (-0.885865)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a body of water (-1.207297)
+INFO:__main__:a woman in a white dress is sitting on a couch (-1.070037)
+INFO:__main__:a black and white dog is playing with a white ball (-0.939220)
+INFO:__main__:a brown and white dog is playing with a red ball (-1.011396)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the snow (-1.478637)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.989007)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.092785)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking down the sidewalk (-1.273913)
+INFO:__main__:a man and a woman are standing in front of a building (-0.954196)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is sitting on a bench (-1.439384)
+INFO:__main__:a black and white dog is running through the woods (-0.711859)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.808623)
+INFO:__main__:a woman in a white shirt is sitting at a table (-1.056651)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.303702)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.029117)
+INFO:__main__:a man in a white shirt and white shorts is playing tennis (-1.000218)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.920518)
+INFO:__main__:a young boy is sleeping on a bed (-0.997643)
+INFO:__main__:a man in a white shirt and black pants is playing a game (-1.189567)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.334934)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.924399)
+INFO:__main__:a man and a woman are swimming in the ocean (-0.942905)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.270223)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.028799)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a cowboy hat is riding a horse (-1.474180)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.204031)
+INFO:__main__:a man in a black shirt is sitting in a chair (-0.959125)
+INFO:__main__:a woman in a red shirt is standing in front of a store (-1.063267)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on a piece of paper (-1.344637)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.342064)
+INFO:__main__:a young girl in a pink dress is sitting on a bench (-0.970264)
+INFO:__main__:a man and a woman are sitting at a table in a room (-0.913766)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt standing in front of a body of water (-1.257816)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.223802)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.309781)
+INFO:__main__:a man in a blue shirt is walking down the street (-0.933583)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.860636)
+INFO:__main__:a man in a white shirt and blue jeans is playing tennis (-1.112341)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.965911)
+INFO:__main__:a group of people are standing in front of a building (-0.924683)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.911642)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.030711)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.937529)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is holding a tennis ball (-1.400730)
+INFO:__main__:a man in a black shirt is working on a computer (-0.908949)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing on a beach (-1.413360)
+INFO:__main__:a man in a blue shirt is walking down the street (-0.997156)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.335382)
+INFO:__main__:a man in a red jacket is working on a piece of wood (-1.226280)
+INFO:__main__:a baseball player in a red jersey is about to throw a ball (-0.964622)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is working on a piece of paper (-1.278199)
+INFO:__main__:a woman in a black dress is sitting on a bench (-0.894113)
+INFO:__main__:a man in a white shirt is looking at a camera (-1.141335)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.327791)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.292970)
+INFO:__main__:a group of people are standing in front of a building (-0.906590)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a boat in the water (-1.367690)
+INFO:__main__:a young girl in a pink shirt is looking at the camera (-1.115160)
+INFO:__main__:a woman in a white shirt and black pants is walking down the street (-1.109217)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt walking down a sidewalk (-1.267871)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is walking in the snow (-1.437976)
+INFO:__main__:a man in a black shirt is walking down the street (-0.901294)
+INFO:__main__:a black and white dog is jumping over a hurdle (-0.783247)
+INFO:__main__:a man in a blue shirt is standing in front of a car (-1.029967)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.961029)
+INFO:__main__:a brown dog is running through a field (-0.830554)
+INFO:__main__:a group of people are standing in front of a building (-0.852415)
+INFO:__main__:a man in a white shirt is looking at a camera (-0.995848)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.328569)
+INFO:__main__:a little girl in a pink shirt is looking at the camera (-1.029196)
+INFO:__main__:a woman in a white shirt is sitting on a couch (-1.069405)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt walking down a sidewalk (-1.323020)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.082644)
+INFO:__main__:a man and a woman are riding on a beach on the beach (-0.984749)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a large tree (-1.419822)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.300221)
+INFO:__main__:a man in a white shirt is standing in front of a computer (-0.953723)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a cowboy hat is riding a horse (-1.365021)
+INFO:__main__:a man in a blue shirt is standing in a pile of water (-1.224509)
+INFO:__main__:a young boy in a blue shirt is playing with a toy (-1.075125)
+INFO:__main__:a little girl in a pink shirt is looking at the camera (-1.089646)
+INFO:__main__:a baseball player in a white uniform is about to hit the ball (-0.962259)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.205516)
+INFO:__main__:a brown dog is running through a field of grass (-0.756932)
+INFO:__main__:a young boy in a blue shirt is jumping in the air (-1.043849)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on the ground with a dog (-1.497088)
+INFO:__main__:a woman in a white shirt is looking at the camera (-1.098214)
+INFO:__main__:a man in a red shirt is riding a red horse (-1.127345)
+INFO:__main__:a man in a white shirt is looking at the camera (-1.070097)
+INFO:__main__:a black and white dog is jumping over a hurdle (-0.878984)
+INFO:__main__:a man and a woman are walking down the street (-1.054730)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-0.992661)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.820349)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.011419)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-0.985080)
+INFO:__main__:a man in a blue shirt is sitting in a chair (-0.982052)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is sitting on a motorcycle (-1.441962)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.967942)
+INFO:__main__:a man in a blue shirt is standing in front of a store (-0.958552)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.087652)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.931821)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-1.056679)
+INFO:__main__:a little girl in a pink dress is sitting on the ground (-1.074952)
+INFO:__main__:a man in a red shirt is standing in front of a building (-1.079595)
+INFO:__main__:a young boy is sleeping on a couch (-0.985186)
+INFO:__main__:a man in a blue shirt is sitting in a chair (-0.997235)
+INFO:__main__:a man in a white shirt is standing in front of a building (-0.911905)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.103685)
+INFO:__main__:a man in a black shirt is sitting on a couch (-0.978096)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is riding a bike down a road (-1.299693)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.199725)
+INFO:__main__:a man in a red shirt is standing in front of a truck (-1.035534)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.318483)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young boy with no shirt is climbing up a rock (-1.286308)
+INFO:__main__:a young boy is playing with a toy in a pool (-1.050967)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is working on a roof (-1.212959)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.876557)
+INFO:__main__:a man in a blue shirt is working on a roof (-1.032303)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is climbing up a rock (-1.298303)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is sitting on a bench (-1.311217)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.251240)
+INFO:__main__:a man and a woman are standing in a field (-1.053334)
+INFO:__main__:a woman in a white tank top and white shorts is jumping (-1.304500)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is doing a handstand on a skateboard (-1.276825)
+INFO:__main__:a man in a blue shirt is sleeping on a couch (-0.970559)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.266688)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.892642)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.293342)
+INFO:__main__:a man in a hard hat is working on a train (-1.051952)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and blue jeans is skateboarding on a sidewalk (-1.340234)
+INFO:__main__:a man in a white shirt is sleeping on a couch (-0.907817)
+INFO:__main__:a little girl in a pink dress is sitting on a couch (-1.111887)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.294799)
+INFO:__main__:a man and a woman are sitting at a table in a room (-0.957319)
+INFO:__main__:a man in a red shirt is standing in front of a car (-0.998749)
+INFO:__main__:a man in a blue shirt is standing in front of a train (-1.012354)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.258815)
+INFO:__main__:a man in a white shirt is standing in front of a counter (-1.061527)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.065624)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.005931)
+INFO:__main__:a man in a black shirt is sitting on a couch (-1.072780)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.279735)
+INFO:__main__:a little boy is playing with a toy toy in the snow (-1.044416)
+INFO:__main__:a brown dog is sleeping on a couch (-1.060477)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in the snow (-1.430835)
+INFO:__main__:a man in a red shirt and blue shorts is playing a game (-1.175321)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.233550)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a young boy with no shirt on is playing with a soccer ball (-1.341208)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.251450)
+INFO:__main__:a man is sleeping on a couch in a living room (-1.011957)
+INFO:__main__:a man and a woman are standing in front of a building (-0.934371)
+INFO:__main__:a man in a white shirt is sleeping on a bed (-1.057237)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.214066)
+INFO:__main__:a man and a woman are sitting at a table in a restaurant (-0.775469)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is sitting on a bench in a park (-1.426630)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt on is standing in front of a building (-1.373561)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.868122)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in the middle of a mountain (-1.494606)
+INFO:__main__:a young boy in a red shirt is looking at the camera (-1.040787)
+INFO:__main__:a man in a black shirt is standing in front of a building (-0.873912)
+INFO:__main__:a man in a blue shirt is riding a bicycle (-1.024054)
+INFO:__main__:a soccer player in a red jersey is about to hit the ball (-0.987840)
+INFO:__main__:a brown dog and a brown dog are playing with a toy (-1.126750)
+INFO:__main__:a man in a black shirt is working on a train (-0.874944)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a store (-1.241784)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.101828)
+INFO:__main__:a black and white dog is running through a field (-0.825037)
+INFO:__main__:a young boy in a red shirt is jumping off a ramp (-1.144697)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt and a cowboy hat is riding a horse (-1.307483)
+INFO:__main__:a man and a woman are swimming in the ocean (-0.947546)
+INFO:__main__:a young boy in a blue shirt is playing with a ball (-1.045932)
+INFO:__main__:a man in a white shirt is sitting on a couch (-0.989449)
+INFO:__main__:a man and a woman are standing in front of a train (-0.985303)
+INFO:__main__:a man in a white shirt is standing in front of a building (-1.041497)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is climbing up a rock wall (-1.245447)
+INFO:__main__:a man in a blue shirt is standing in front of a truck (-1.042578)
+INFO:__main__:a man in a white shirt is sitting at a table (-1.068562)
+INFO:__main__:a man in a white shirt and a man in a white shirt are (-1.088554)
+INFO:__main__:a man in a yellow shirt is riding a bicycle (-1.058584)
+INFO:__main__:WORD KEPT: no
+INFO:__main__:a man with no shirt is standing in front of a building (-1.227983)
+INFO:__main__:a man in a white shirt and blue shorts is playing tennis (-1.092052)
+INFO:__main__:a man is sitting on a bench in front of a building (-0.889361)
