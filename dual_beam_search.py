@@ -400,6 +400,10 @@ class GroundedTranslationGenerator:
                                    in itertools.takewhile(
                                        lambda n: n != "<E>", complete_sentences[i])])
             
+            # The description data in the JSON file is stored together with a flag
+            # indicating whether or not there is a negation in the sentence.
+            ident_desc_dict[data['ident']] = [generated_sentence, self.found_negation]
+            
             handle.write(generated_sentence + "\n")
             if self.args.verbose:
                 logger.info("%s (%f)", generated_sentence, best_beam[0])
@@ -410,6 +414,18 @@ class GroundedTranslationGenerator:
             if seen == self.data_gen.split_sizes[prefix]:
                 # Hacky way to break out of the generator
                 break
+        
+        # Put together the filename for the JSON data, consisting of the following:
+        json_location = ''.join([filepath,                  # folder
+                                 '/'                        # trailing slash
+                                 prefix,                    # 'val' or 'test'
+                                 '_dual_beam_search_',      # kind of generation
+                                 str(self.args.beam_width), # beam width used
+                                 '.json'])                  # filetype
+        
+        # Write the JSON data.
+        with codecs.open(json_name,'w','utf-8') as f:
+            json.dump(ident_desc_dict, f)
         
         logger.info("Total number of kept sentences: " + str(neg_counter))
         handle.close()
