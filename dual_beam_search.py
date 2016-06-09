@@ -411,7 +411,7 @@ class GroundedTranslationGenerator:
                 # Hacky way to break out of the generator
                 break
         
-        logger.info("Total number of kept sentences: " + str(found_negation))
+        logger.info("Total number of kept sentences: " + str(neg_counter))
         handle.close()
 
     def calculate_pplx(self, path, val=True):
