@@ -416,15 +416,15 @@ class GroundedTranslationGenerator:
                 break
         
         # Put together the filename for the JSON data, consisting of the following:
-        json_location = ''.join([filepath,                  # folder
-                                 '/',                        # trailing slash
-                                 prefix,                    # 'val' or 'test'
-                                 '_dual_beam_search_',      # kind of generation
-                                 str(self.args.beam_width), # beam width used
-                                 '.json'])                  # filetype
+        json_path = ''.join([filepath,                  # folder
+                             '/',                        # trailing slash
+                             prefix,                    # 'val' or 'test'
+                             '_dual_beam_search_',      # kind of generation
+                             str(self.args.beam_width), # beam width used
+                             '.json'])                  # filetype
         
         # Write the JSON data.
-        with codecs.open(json_name,'w','utf-8') as f:
+        with codecs.open(json_path, 'w', 'utf-8') as f:
             json.dump(ident_desc_dict, f)
         
         logger.info("Total number of kept sentences: " + str(neg_counter))
