@@ -328,8 +328,8 @@ class GroundedTranslationGenerator:
                                                         category='regular beams')
                 finished.extend(finished_this_round)
                 
-                neg_beams, finished_this_round = self.prune(candidates,
-                                                            max_beam_width,
+                neg_beams, finished_this_round = self.prune(neg_candidates,
+                                                            neg_max_beam_width,
                                                             category='selected beams')
                 neg_finished.extend(finished_this_round)
                 
