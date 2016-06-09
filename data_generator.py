@@ -323,7 +323,8 @@ class VisualWordDataGenerator(object):
                     != "<P>"]))
                 yield_data = self.create_yield_dict(arrays,
                                                     targets,
-                                                    batch_indices)
+                                                    batch_indices,
+                                                    ident=ident)
                 yield yield_data
                 i = 0
                 arrays = self.get_batch_arrays(batch_size,
@@ -405,7 +406,7 @@ class VisualWordDataGenerator(object):
                                     IMG_FEATS)))
         return arrays
 
-    def create_yield_dict(self, array, targets, indices):
+    def create_yield_dict(self, array, targets, indices, ident=None):
         '''
         Returns a dictionary object of the array, the targets,
         and the image, description indices in the batch.
@@ -418,17 +419,20 @@ class VisualWordDataGenerator(object):
                     'source': array[1],
                     'img': array[2],
                     'output': targets,
-                    'indices': indices}
+                    'indices': indices,
+                    'ident': ident}
         elif self.use_image:
             return {'text': array[0],
                     'img': array[1],
                     'output': targets,
-                    'indices': indices}
+                    'indices': indices,
+                    'ident': ident}
         elif self.use_source:
             return {'text': array[0],
                     'source': array[1],
                     'output': targets,
-                    'indices': indices}
+                    'indices': indices,
+                    'ident': ident}
 
     def resize_arrays(self, new_size, arrays):
         """
@@ -823,4 +827,3 @@ class VisualWordDataGenerator(object):
 	    return True
 	else:
 	    return False
-
