@@ -417,7 +417,7 @@ class GroundedTranslationGenerator:
         
         # Put together the filename for the JSON data, consisting of the following:
         json_location = ''.join([filepath,                  # folder
-                                 '/'                        # trailing slash
+                                 '/',                        # trailing slash
                                  prefix,                    # 'val' or 'test'
                                  '_dual_beam_search_',      # kind of generation
                                  str(self.args.beam_width), # beam width used
