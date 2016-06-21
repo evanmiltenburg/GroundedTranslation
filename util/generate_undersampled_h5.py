@@ -1,3 +1,11 @@
+"""
+Put this in the same directory as your Flickr30K dataset.h5 file, along with a
+copy of the annotations from Van Miltenburg et al. (2016):
+https://github.com/evanmiltenburg/annotating-negations/blob/master/results/final_annotations.tsv
+
+Be sure to make a folder called 'undersampled'.
+"""
+
 import h5py
 import csv
 import random
