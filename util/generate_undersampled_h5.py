@@ -15,10 +15,13 @@ random.seed(123456789)
 with open('final_annotations.tsv') as f:
     reader = csv.DictReader(f, delimiter='\t')
     negation_sentences = set()
+    not_a_description = set()
     ignore = set()
     for entry in reader:
         sentence = entry['Sentence'].strip(' .')
         if entry['Category'] == 'Not a description/Meta':
+            not_a_description.add(sentence)
+        elif entry['Category'] == 'False positive':
             ignore.add(sentence)
         else:
             negation_sentences.add(sentence)
@@ -37,7 +40,7 @@ def fill_new_h5file(old_file, new_file, split):
     # Fill the new file.
     for key in old_file[split]:
         # Get a description for the current key.
-        descriptions = set(old_file[split][key]['descriptions'])
+        descriptions = set(old_file[split][key]['descriptions']) - not_a_description
         intersection = descriptions & negation_sentences
         if len(intersection) > 0:
             sentence_to_use = random.choice(list(intersection))
