@@ -55,6 +55,11 @@ for idx, image in enumerate(jdata['images']):
   if split == "test":
     container = test.create_group("%06d" % test_counter)
     test_counter += 1
+  # See Andrej Karpathy's remarks on Twitter: https://twitter.com/karpathy/status/592193801310973952
+  # He uses restval as additional training. (Originally val in MSCOCO.)
+  if split == 'restval':
+    container = train.create_group("%06d" % train_counter)
+    train_counter += 1
 
   # The descriptions "Dataset" contains one row per description in unicode
   text_data = container.create_dataset("descriptions", (len(image['sentences']),),
