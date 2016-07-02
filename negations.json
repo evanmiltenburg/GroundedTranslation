@@ -1,0 +1,37 @@
+{
+  "STARTSWITH": [
+    "fail", 
+    "omit", 
+    "miss", 
+    "lack"
+  ], 
+  "ENDSWITH": [], 
+  "WHOLEWORD": [
+    "none", 
+    "never", 
+    "sans", 
+    "no", 
+    "nobody", 
+    "n't", 
+    "not", 
+    "without", 
+    "nowhere", 
+    "nothing", 
+    "neither", 
+    "minus", 
+    "nor", 
+    "dont", 
+    "werent", 
+    "isnt", 
+    "doesnt", 
+    "couldnt", 
+    "shouldnt", 
+    "hasnt", 
+    "wont", 
+    "wouldnt", 
+    "cant", 
+    "arent", 
+    "havent", 
+    "didnt"
+  ]
+}
