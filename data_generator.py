@@ -421,7 +421,7 @@ class VisualWordDataGenerator(object):
                     'indices': indices}
         
         # The ident key interferes with training.
-        if not self.args['train']:
+        if not self.args.train:
             yield_dict['ident'] = ident
         
         # Add items as necessary and return.
@@ -430,7 +430,7 @@ class VisualWordDataGenerator(object):
             yield_dict['img'] = array[2]
             return yield_dict
         elif self.use_image:
-            yield_dict['img'] = array[2]
+            yield_dict['img'] = array[1]
             return yield_dict
         elif self.use_source:
             yield_dict['source'] = array[1]
