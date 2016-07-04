@@ -260,6 +260,7 @@ if __name__ == "__main__":
                         inputs? Default = False ( == Oracle)")
 
     arguments = parser.parse_args()
+    arguments.__dict__['train'] = True
 
     if arguments.source_vectors is not None:
         if arguments.source_type is None or arguments.source_enc is None:
