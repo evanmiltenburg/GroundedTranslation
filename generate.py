@@ -720,5 +720,7 @@ if __name__ == "__main__":
                         activations over oracle inputs or from predicted\
                         inputs? Default = False ( == Oracle)")
 
-    w = GroundedTranslationGenerator(parser.parse_args())
+	arguments = parser.parse_args()
+	arguments.__dict__['train'] = False
+    w = GroundedTranslationGenerator(arguments)
     w.generate()
