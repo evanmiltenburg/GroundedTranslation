@@ -156,7 +156,8 @@ class VisualWordDataGenerator(object):
                     if i == self.args.batch_size:
                         targets = self.get_target_descriptions(arrays[0])
                         yield_data = self.create_yield_dict(arrays, targets,
-                                                            batch_indices)
+                                                            batch_indices,
+                                                            ident=ident)
                         #logger.debug(yield_data['img'][0,0,:])
                         #logger.debug(' '.join([self.index2word[np.argmax(x)] for x in yield_data['text'][0,:,:]]))
                         #logger.debug(' '.join([self.index2word[np.argmax(x)] for x in yield_data['output'][0,:,:]]))
@@ -237,7 +238,8 @@ class VisualWordDataGenerator(object):
                     if i == self.args.batch_size:
                         targets = self.get_target_descriptions(arrays[0])
                         yield_data = self.create_yield_dict(arrays, targets,
-                                                            batch_indices)
+                                                            batch_indices,
+                                                            ident=ident)
                         yield yield_data
                         i = 0
                         arrays = self.get_batch_arrays(self.args.batch_size)
