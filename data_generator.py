@@ -415,26 +415,26 @@ class VisualWordDataGenerator(object):
 
         Helper function for {random,fixed,generation}_generator().
         '''
-
+        # These items will always be passed.
+        yield_dict = {'text': array[0],
+                    'output': targets,
+                    'indices': indices}
+        
+        # The ident key interferes with training.
+        if not self.args['train']:
+            yield_dict['ident'] = ident
+        
+        # Add items as necessary and return.
         if self.use_source and self.use_image:
-            return {'text': array[0],
-                    'source': array[1],
-                    'img': array[2],
-                    'output': targets,
-                    'indices': indices,
-                    'ident': ident}
+            yield_dict['source'] = array[1]
+            yield_dict['img'] = array[2]
+            return yield_dict
         elif self.use_image:
-            return {'text': array[0],
-                    'img': array[1],
-                    'output': targets,
-                    'indices': indices,
-                    'ident': ident}
+            yield_dict['img'] = array[2]
+            return yield_dict
         elif self.use_source:
-            return {'text': array[0],
-                    'source': array[1],
-                    'output': targets,
-                    'indices': indices,
-                    'ident': ident}
+            yield_dict['source'] = array[1]
+            return yield_dict
 
     def resize_arrays(self, new_size, arrays):
         """
