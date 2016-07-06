@@ -5,6 +5,7 @@ np.set_printoptions(threshold='nan')
 import h5py
 import theano
 
+import json
 import argparse
 import itertools
 import subprocess
@@ -118,7 +119,8 @@ class GroundedTranslationGenerator:
 
         TODO: duplicated method with generate.py
         """
-
+	ident_desc_dict = dict()
+	
         if self.args.beam_width > 1:
             prefix = "val" if val else "test"
             handle = codecs.open("%s/%sGenerated" % (filepath, prefix), "w",
@@ -252,20 +254,31 @@ class GroundedTranslationGenerator:
                 # Emit the lowest (log) probability sequence
                 best_beam = finished[0]
                 complete_sentences[i] = [self.index2word[x] for x in best_beam[1]]
-                handle.write(' '.join([x for x
-                                       in itertools.takewhile(
-                                           lambda n: n != "<E>", complete_sentences[i])]) + "\n")
+                generated_sentence = ' '.join([x for x
+                                        in itertools.takewhile(
+                                           lambda n: n != "<E>", complete_sentences[i])])
+                handle.write(generated_sentence + "\n")
                 if self.args.verbose:
-                    logger.info("%s (%f)",' '.join([x for x
-                                          in itertools.takewhile(
-                                              lambda n: n != "<E>",
-                                              complete_sentences[i])]),
-                                          best_beam[0])
-
+                    logger.info("%s (%f)",generated_sentence, best_beam[0])
+                
+                # None is a placeholder for boolean indicating whether a negation was found.
+                ident_desc_dict[data['ident']] = [generated_sentence, None]
                 seen += text.shape[0]
                 if seen == self.data_gen.split_sizes['val']:
                     # Hacky way to break out of the generator
                     break
+                    # Put together the filename for the JSON data, consisting of the following:
+                
+            json_path = ''.join([filepath,                  # folder
+                                 '/',                       # trailing slash
+                                 prefix,                    # 'val' or 'test'
+                                 '_beam_search_',           # kind of generation
+                                 str(self.args.beam_width), # beam width used
+                                 '.json'])                  # filetype
+            
+            # Write the JSON data.
+            with codecs.open(json_path, 'w', 'utf-8') as f:
+                json.dump(ident_desc_dict, f)
             handle.close()
         else:
             # We are going to arg max decode a sequence.
